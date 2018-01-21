@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>志愿者注册</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .main{
+        width: 50%;
+        margin: auto;
+    }
+    .form-group .col-lg-6,.form-group .col-lg-12{
+        margin: 5px 15px 15px -15px;
+    }
+    .form-group:nth-child(2){
+        clear: both;
+    }
+
+</style>
+<body>
+<div class="main">
+    <h1>志愿者注册</h1>
+    <hr/>
+    <form role="form">
+        <div class="form-group" id="name_div">
+            <div class="col-lg-6">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <!--第一行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-6">
+                <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="年龄">
+            </div>
+            <div class="col-lg-6">
+                <select class="form-control">
+                    <option value='' disabled selected style='display:none;'>
+                        性别</option>
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+        </div>
+        <!--第二行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-6">
+                <input type="text" class="form-control" id="nation" placeholder="民族">
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control" id="language" placeholder="擅长语言">
+            </div>
+        </div>
+        <!--第三行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-6">
+                <input type="text" class="form-control" id="tel" placeholder="联系方式">
+            </div>
+            <div class="col-lg-6">
+                <input type="email" class="form-control" id="email" placeholder="邮箱">
+            </div>
+        </div>
+        <!--第四行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-12">
+                <textarea class="form-control" rows="4" placeholder="申请原因"></textarea>
+            </div>
+        </div>
+        <!--第五行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-12">
+                <textarea class="form-control" rows="4" placeholder="优势"></textarea>
+                <!--申请原因至少100字 优势至少50字 顾客期望不做限制 我这样想的-->
+            </div>
+        </div>
+        <!--第6行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-12">
+                <select name="服务区域" class="form-control">
+                    <option value='' disabled selected style='display:none;'>
+                        服务区域</option>
+                    <option>区域A</option>
+                    <option>区域B</option>
+                    <option>区域C</option>
+                </select>
+            </div>
+        </div>
+        <!--第7行结束-->
+
+        <div class="form-group">
+            <div class="col-lg-12">
+                <textarea class="form-control" rows="4" placeholder="对顾客的期望"></textarea>
+            </div>
+        </div>
+        <!--第8行结束-->
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-default btn-lg">提交</button>
+        </div>
+    </form>
+
+
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
