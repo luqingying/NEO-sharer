@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: azure;
+    }
+    nav,.search,.nav-main,.nav-center{
+        height: 55px;
+        line-height: 55px;
+        z-index: 1;
+    }
+    nav{
+        width: 100%;
+        box-shadow:1px 1px 10px darkgray ;
+        position: fixed;
+        top:0;left: -1px;
+        background-color: white;
+    }
+    .nav-center{
+        width: 1000px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .glyphicon-search{
+        position: relative;
+        left: -20px;
+        top:4px
+    }
+    .search{
+        width: 500px;
+        height: 2em;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .nav-main{
+        list-style: none;
+        float: right;
+    }
+    .nav-li{
+        float: left;
+        padding:0 2em;
+    }
+    .dropdown-menu{
+        left:2em;
+    }
+
+    .top{
+        width: 1000px;
+        transform: translate(-50%,0);
+        position: relative;
+        left: 50%;
+        top:85px;
+    }
+
+    #top-left-div{
+        position: relative;
+        top:0;left: 0;
+        margin: 0;
+        width: 60%;
+        display: inline-block;
+    }
+    #top-left-div img{
+        width: 100%;
+    }
+    #top-left-div .img-decoration{
+        width:100%;
+        margin:auto;
+        position: relative;
+        top:-2em;
+        background-color:rgba(0,0,0,0.3);
+        color: white;
+        font-size: 26px;
+        height:2em;
+        line-height: 2em;
+        text-align: center;
+    }
+    #main-decoration{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 38%;
+        text-align: justify;
+        text-indent: 2em;
+        display: inline-block;
+        font-size: 18px;
+        background-color: white;
+        padding:1em;
+        border: 1px solid lightgray;
+        height:calc(100% - 52px);
+    }
+</style>
+<body>
+<nav>
+    <div class="nav-center">
+        <input type="text" class="search" placeholder="搜索感兴趣的内容"><a href="#"><span class="glyphicon glyphicon-search"></span></a>
+        <ul class="nav-main ">
+            <li class="nav-li dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                登录
+                <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">用户</a></li>
+                    <li><a href="#">志愿者</a></li>
+                    <li><a href="#">工作人员</a></li>
+                </ul>
+            </li>
+            <li class="nav-li dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    注册
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="user_register.html">用户</a></li>
+                    <li><a href="volunteer_register.html">志愿者</a></li>
+                </ul>
+            </li>
+            <li class="nav-li"><a href="#">English</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="top">
+    <div id="top-left-div">
+        <img src="tiananmen.jpg">
+        <div class="img-decoration">北京天安门</div>
+    </div>
+    <div id="main-decoration">
+        <p>天安门，坐落在中华人民共和国首都北京市的中心、故宫的南端，与天安门广场以及人民英雄纪念碑、毛主席纪念堂、人民大会堂、中国国家博物馆隔长安街相望，占地面积4800平方米，以杰出的建筑艺术和特殊的政治地位为世人所瞩目。
+        </p>
+    </div>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
