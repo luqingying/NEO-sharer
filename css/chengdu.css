@@ -1,0 +1,40 @@
+main{
+    width: 1000px;
+    transform: translate(-50%,0);
+    position: relative;
+    left: 50%;
+    top:85px;
+}
+.places{
+    width: 100%;
+    margin:0 0 60px 0;
+}
+img{
+    width: 100%;
+}
+.pictures-div{
+    font-size: 20px;
+    width: 60%;
+    float: left;
+    display: inline-block;
+    margin: 0 30px 15px 0 ;
+}
+/*.img-decoration{
+    width:100%;
+    margin:auto;
+    position: relative;
+    top:-2em;
+    background-color:rgba(0,0,0,0.3);
+    color: white;
+    height:2em;
+    line-height: 2em;
+    text-align: center;
+}*/
+p{
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 2em;
+}
+.lead{
+    text-indent: 0;
+}
