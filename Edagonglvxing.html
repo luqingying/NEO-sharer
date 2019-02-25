@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO-sharer—Work travel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/baomingbiao.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <link rel="stylesheet" href="css/english.css">
+
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="#hongjunluxian">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="#sanguowenhua">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="#shicizhixiang">
+                                The hometown of poetry
+                            </a>
+                        </li>
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.htmls" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid blue_bg">
+    <div class="blue_title text-center">
+        <span class="title">Work Travel Form</span>
+    </div>
+    <div class="container">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="name-input" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="name-input" placeholder="Please enter your name">
+                </div>
+                <!--                </div>
+                                <div class="form-group">-->
+                <label for="sex" class="col-sm-2 control-label">Gender</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="sex">
+                        <option>Man</option>
+                        <option>Woman</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country" class="col-sm-2 control-label">Nationality</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="country" placeholder="Please enter your nationality">
+                </div>
+                <!--                </div>
+                                <div class="form-group">-->
+                <label for="language-input" class="col-sm-2 control-label">Language</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="language-input"
+                           placeholder="Please enter your language">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telphone-num" class="col-sm-2 control-label">Telephone</label>
+                <div class="col-sm-3">
+                    <input type="tel" class="form-control" id="telphone-num" placeholder="Please enter your telephone">
+                </div>
+                <!--              </div>
+                              <div class="form-group">-->
+                <label for="e_mail" class="col-sm-2 control-label">Mailbox</label>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" id="e_mail" placeholder="please enter your email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-2">
+                    <input type="tel" class="form-control" placeholder="Province">
+                </div>
+                <div class="col-sm-2">
+                    <input type="tel" class="form-control" placeholder="City">
+                </div>
+                <div class="col-sm-2">
+                    <input type="tel" class="form-control" placeholder="County">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sex" class="col-sm-2 control-label">Tourist choice</label>
+                <div class="col-sm-3" id="travel-place">
+                    <select class="col-sm-3 form-control sangeluxian">
+                        <option class="hongjun">Red Army Route</option>
+                        <option class="sanguo">Three cultures</option>
+                        <option class="shici">Land of poetry</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class=" form-control" id="红军路线">
+                        <option>Sewudang Mountain</option>
+                        <option>Sichuan and Shaanxi Revolutionary Base</option>
+                        <option>Jianmenguan Rebellion Site</option>
+                        <option>Zhu De's House</option>
+                        <option>Former Residence of Deng Xiaoping</option>
+                    </select>
+
+                    <select class="form-control" id="三国文化">
+                        <option>Wu Houyi</option>
+                        <option>Jianmenguan</option>
+                        <option>Seven Temples</option>
+                    </select>
+
+                    <select class=" form-control" id="诗词之乡">
+                        <option>Du Fu Thatched Cottage</option>
+                        <option>Sansu</option>
+                        <option>Taibai Bailinlin</option>
+                    </select>
+                </div>
+
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Ideal place to work and type</label>
+                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Specialty or advantage</label>
+                <textarea class="form-control  col-md-offset-2" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Requirements for fellow volunteers</label>
+                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Other requirements or notes</label>
+                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-default col-md-offset-2">Submit</button>
+                <button type="reset" class="btn btn-default">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+
+<script src="js/baomingbiao.js"></script>
+<script src="js/search.js"></script>
+
+</body><script src="js/Ehome.js"></script>
+</html>

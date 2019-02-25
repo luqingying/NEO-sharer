@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mode.css">
+    <title>Chengdu scenic spot</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <link rel="stylesheet" href="css/english.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="page-header">
+        <h1>Chengdu
+            <small>Introduction of Sichuan scenic spots</small>
+        </h1>
+    </div>
+
+    <div class="places" id="dufucaotang">
+    <div class="pictures-div">
+        <img src="img/dufucaotang.jpg">
+      <!--  <div class="img-decoration">成都杜甫草堂博物馆</div>-->
+    </div>
+    <h2>Du Fu Thatched Cottage Museum in Chengdu</h2>
+    <p>Du Fu Thatched Cottage, the national key cultural relic protection unit, the national AAAA level tourist attraction, the national first level museum, the national key protection unit of ancient books. Du Fu Thatched Cottage, also known as the Huabu cottage, the Ministry of work, the Shao ling cottage, is located in the west suburb of Chengdu, the old residence of the great poet Du Fu of the Tang Dynasty in Chengdu, and the largest, most well preserved, most characteristic and famous place of the surviving Du Fu's trace remains. Du Fu has lived here for nearly four years, and more than 240 poems have been written so far. Among them, Wen Guan Jun's collection of Hebei in Henan has become a necessary course for students in many areas. The former residence of cottage is regarded as "holy land" in the history of Chinese literature.</p>
+    <p>At the end of the Tang Dynasty, the poet Wei zhuang found the thatched cottage site and rebuilt the hut to preserve it. All the dynasties in song, yuan, Ming and Qing Dynasties were renovated and expanded. The area of today's cottage covers an area of nearly 300 mu, still retaining the architectural pattern of Akihiro Ji's thirteen years (AD 1500) and the sixteen years of Qing Jiaqing (1811 AD) renovation. The architecture is simple and elegant and the garden is quiet and beautiful. It is a sacred place in the history of Chinese literature. In 1955, the memorial hall of Du Fu was established. In 1985, it was renamed the Du Fu Thatched Cottage Museum in Chengdu.</p>
+    <p class="lead">
+        Address: No. 38 Qinghua Road, Chengdu, Chengdu.<br/>
+        Opening hours: 7:30 to 19:00 in summer and winter in the winter.<br/>
+        Ticket price: 60 yuan for adults and 30 yuan for students<br/>
+        With the exception of the local elderly card, the 70 year old is free of charge except holidays.<br/>
+        The officers and soldiers in active duty of the Chinese people's Liberation Army are free of charge and armed police certificates.<br/>
+        Famous scenic spots: Shao Ling cottage, Daya hall, Wan Fu Lou, etc.<br/>
+        Category: human landscape<br/>
+    </p>
+</div><!--杜甫草堂-->
+
+    <div class="places" id="wuhouci">
+        <div class="pictures-div">
+            <img src="img/wuhouci.jpg">
+<!--            <div class="img-decoration">武侯祠</div>-->
+        </div>
+        <h2>Wu hou Temple in Chengdu</h2>
+        <p>Wu hou Temple, Chengdu, is the only imperial temple in China. It is composed of Wu hou Temple, Han Zhao Li temple and Hui Ling. It is customary to call the three as Wu hou Temple. Chengdu Wu hou Temple was built in 223 ad to build Hui Ling. Among them, Wu hou Temple was built before the Tang Dynasty and was adjacent to the temple of Han Zhao in the early days of Liu Bei. The Wu hou Temple was incorporated into the Ming Dynasty when the Ming Dynasty was rebuilt, forming a combination of the monarch and the minister, the temple and the mausoleum. In addition to Hui Ling, the main building of the ancestral temple was rebuilt in the Qing Dynasty in 1672. In 1961, the Wu hou Temple of Chengdu was declared the first batch of national key cultural relics protection units by the State Council. In 1984, the museum was established. In 2008, it was awarded the first batch of national first-class museums, enjoying the reputation of "Three Kingdoms". The Wu hou Temple Museum in Chengdu is now divided into three parts: Three Kingdoms historical sites, Western and Jin li Street folklore areas, with an area of 150 thousand square meters. In 2006, Wu hou Temple was awarded the national AAAA grade scenic spot. It is the most influential Three Kingdoms Museum in the world.</p>
+        <p class="lead">
+            The name of the foreign language: Temple of Marquis<br/>
+            Address: No. 231 Wu hou Temple street, Wu hou District, Chengdu, Sichuan.<br/>
+            Area: 14000 square meters opening time: peak season 8:00-21:30, off-season 8:00-18:30<br/>
+            Ticket price: 60 yuan for open ticket and 30 yuan for student ticket<br/>
+            Alias: the temple of Han Zhao<br/>
+            It is recommended for a long time to play: 2-3 hours<br/>
+
+        </p>
+    </div><!--武侯祠-->
+
+    <div class="places" id="xiongmaojidi">
+        <div class="pictures-div">
+            <img src="img/xiongmaojidi.jpg">
+        </div>
+        <h2>Chengdu Research Base of Giant Panda Breeding</h2>
+        <p>Chengdu giant panda breeding research base is a non-profit organization specializing in endangered wildlife research, breeding, conservation education and education tourism. The Chengdu giant panda breeding and breeding research base is located on the shallow hill side of the axe mountain mountain    in Bei jiao, Chengdu. The research building, the open research laboratory, the animal hospital, the animal house and the panda activity field, the Swan Lake, the panda museum, the panda hospital, the panda kitchen and so on, have formed the bamboo trees and the natural mountain scenery. Integrated with the beautiful artificial landscape, it is suitable for the ecological environment where giant pandas and many rare wild animals live and reproduce. The research base of giant panda breeding is to simulate the wild ecologicalenvironment of giant panda by means of gardening. The green coverage rate of the giant panda is 96%, and the ecological environment suitable for the reproduction and reproduction of giant pandas and a variety of rare wild animals is built. There are more than 80 giant pandas and rare animals such as pandas, black necked cranes and white cranes all year round </p>
+         <p>According to the construction and reception standards of the international first-class scenic spots, the base has made use of limited funds in recent years to continuously increase the investment and transformation of tourism environment and infrastructure, introduce the concept of "education tourism", develop high-end tourism projects, carry out high quality services and improve service level, and have obtained the tourism assessment of the world tourism organization. Jiu zhai gou is one of the best in the first place.</p>
+        <p class="lead">
+            The name of the foreign language:Chengdu Research Base of Giant Panda<br/>
+            Time of opening: 07:30~18:00<br/>
+            Address: No. 1375 panda Road, Wai Bei, Chenghua District, Chengdu.<br/>
+            Ticket price: 58 yuan<br/>
+            Land area: 1000 mu<br/>
+
+        </p>
+    </div><!--熊猫基地-->
+
+    <div class="places" id="kuanzhaixiangzi">
+        <div class="pictures-div">
+            <img src="img/kuanzhaixiangzi.jpg">
+            <!--            <div class="img-decoration">武侯祠</div>-->
+        </div>
+        <h2>Kuan Alley and Zhai Alley</h2>
+        <p>Kuan Alley and Zhai Alley, a historical and cultural area in Chengdu, Sichuan, China, consists of three eastern and Western streets (from north to south to south, narrow alley, and I Ko), as well as residents' homes between the streets. Kuan Alley and Zhai Alley was included in the conservation planning of historic and cultural cities in Chengdu in 1980s. In June 2008, the Kuan Alley and Zhai Alley renovation project, which lasted for three years, was completed. The renovation of the Kuan Alley and Zhai Alley is composed of 45 architectural communities, such as the courtyard house of the late Qing Dynasty and the beginning of the people's style, the garden building with the cultural and cultural background, the newly built house style The Inn Boutique and so on. In 2011, Kuan Alley and Zhai Alley was rated as one of the new ten sceneries in Chengdu.</p>
+        <p>The wide lane and narrow alley are the epitome of the ancient and young city of Chengdu, a symbol of deep memory. When tourists are accompanying the sunset, watching the smoke of the kitchen and walking in the alley of the dusk, a scene that is long gone from the old city to the citizenry life is floating in front of us.</p>
+        <p class="lead">
+            Open time: all day<br/>
+            Fares: free of charge<br/>
+            Land area: 479 Mu<br/>
+        </p>
+    </div><!--宽窄巷子-->
+</main>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

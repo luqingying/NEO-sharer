@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mode.css">
+    <title>Delicious food</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <link rel="stylesheet" href="css/english.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="page-header">
+        <h1>Delicious food
+        </h1>
+    </div>
+
+    <div class="places" id="chuancai">
+        <div class="pictures-div">
+            <img src="img/chuancai.jpg">
+        </div>
+        <h2>Sichuan cuisine</h2>
+        <p>It has always enjoyed the reputation of "one dish, one grain, 100 dishes and 100 flavors". Sichuan cuisine has many 38 kinds of cooking methods including frying, frying, drying, frying, fumigating, soaking, stewing, braising, braising, sticking, blasting and so on. In terms of taste, it is very particular about color, aroma, taste, shape, and the length of the north and the south.</p>
+        <p>There are always "seven flavors" (sweet, acid, hemp, spicy, bitter, fragrant, salty), "eight" (dry burning, acid, spicy, fish fragrance, stir - stir, strange taste, pepper, red oil).</p>
+        <p>The main dishes are "kung pao chicken", "Mapo bean curd", "light shadow beef", "camphor tea duck", "pot tripe hot pot", "fish scallop meat", and so on more than 300 kinds.</p>
+    </div><!--川菜-->
+
+    <div class="places" id="shancai">
+        <div class="pictures-div">
+            <img src="img/shancai.jpg">
+        </div>
+        <h2>Shanxi cuisine（Qin cuisine）</h2>
+        <p>Shanxi cuisine is called Shaanxi cuisine, also known as Qin cuisine. It is one of the regional cuisines in China.</p>
+        <p>Qin cuisine is simple and unadorned in its seasoning, emphasizing the intrinsic flavor and aroma, followed by color and form. One of the characteristics is that the main flavor is outstanding and the taste is pure. Although a variety of condiments used in a dish, the main flavor of each dish is only one, acid, spicy, bitter, sweet and salty only with one taste, and other flavors (including all kinds of compound flavours). Another characteristic of Qin cuisine is the outstanding fragrance. Compared with the four major cuisines, chilli, chilli, garlic and pepper are used in addition to the main ingredients of the Chinese cabbage. The purpose of the selection is not only for spicy, acid and hemp, but also for its fragrance.</p>
+        <p>Famous dishes: "Yulin tofu banquet", "gourd chicken", "burning three delicacies", "Ziyang steamed basin" and so on.</p>
+    </div><!--大唐芙蓉园-->
+
+    <div class="places">
+        <div class="pictures-div" id="yuecai">
+            <img src="img/yuecai.jpg">
+        </div>
+        <h2>Cantonese cuisine</h2>
+        <p>Cantonese cuisine, Guangdong cuisine, is one of the four traditional Chinese cuisines and eight major cuisines. It originated in south of the Five Ridges.</p>
+        <p>Cantonese cuisine is made up of Guangzhou cuisine (also known as Cantonese cuisine), Chaozhou cuisine (also known as Chaoshan cuisine) and Dongjiang cuisine (also known as Hakka cuisine). Guangzhou cuisine is rich in material and fine material; it is clear and not light, fresh and uncommon, tender and not raw, oil but not greasy; good at stir fry, which requires mastery of fire and oil temperature. Chaozhou cuisine is one of the two schools in Fujian and Guangdong. It is famous for its seafood, soup, vegetarian and sugar beet. Dongjiang dishes are mostly meat, very few aquatic products. The main ingredients are outstanding. They are thick and fragrant, heavy oil and salty taste. They are famous for casseroles and have a unique local flavor.</p>
+        <p>Famous Cantonese dishes: "abalone," "Guangzhou Wenchang chicken", "bake suckling pig", "New Dragon Emperor banquet", "Peninsular imperial swallow", "steamed East Star spot", "hang oven to burn goose" and so on</p>
+
+    </div><!--陕西历史博物馆-->
+
+    <div class="places">
+        <div class="pictures-div" id="lucai">
+            <img src="img/lucai.jpg">
+        </div>
+        <h2>Shandong cuisine</h2>
+
+        <p>Shandong cuisine is the oldest local cuisine with the richest techniques, the most difficult and the most effective local flavor dishes. Gu Qilu is the hometown of Kong and Meng. It has been one of the birthplaces of Chinese culture since ancient times. Shandong cuisine is famous for its clear, fresh, crisp and tender dishes from Ji'nan and Jiaodong.</p>
+        <p>Shandong cuisine pays attention to the fine texture of raw materials, fresh salt, fresh soup, and fresh seasoning. The green onion is a special product in Shandong. Most of the dishes are to be flavored with onion and garlic. The methods of stir frying, burning, bursting, grilled and burning are all used with green onions, especially green onions.</p>
+        <p>Classic dishes include: "one quality bean curd", "scallion burning sea cucumber", "three filaments shark fin", "white pick four treasures", "nine turn large intestine", "oil explosion crisp" and so on.</p>
+
+
+    </div><!--秦岭-->
+
+
+</main>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-nav,.search,.nav-main,.nav-center{
+/*.nav-main,.nav-center{
     height: 55px;
     line-height: 55px;
     z-index: 1;
@@ -16,28 +16,28 @@ nav{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-}
-.glyphicon-search{
+}*/
+/*.glyphicon-search{
     position: relative;
     left: -20px;
     top:4px
-}
-.search{
+}*/
+/*.search{
     width: 500px;
     height: 2em;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-.nav-main{
+}*/
+/*.nav-main{
     list-style: none;
     float: right;
 }
 .nav-li{
     float: left;
     padding:0 2em;
-}
+}*/
 .dropdown-menu{
     left:2em;
 }

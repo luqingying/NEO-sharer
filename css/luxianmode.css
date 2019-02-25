@@ -1,0 +1,29 @@
+
+.container{
+    width: 1000px;
+    left: 0;
+    right: 0;
+    position: relative;
+    margin: auto;
+}
+h1{
+    font-size: 34px;
+}
+p{
+    text-indent: 2em;
+    margin: 1em auto;
+    text-align: justify;
+}
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 22px;
+}
+h1,h2,h3{
+    margin:1em auto;
+}
+.introduction{
+    font-size: 20px;
+    color: #7c7c7c;
+}

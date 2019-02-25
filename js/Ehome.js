@@ -1,19 +1,19 @@
 /**
- * Created by luqingying on 2018/2/7.
+ * Created by luqingying on 2018/4/24.
  */
 function loginname(name) {
     var title = document.getElementById("login").getElementsByTagName("h1")[0];
     if(name == "yh")
-        title.innerHTML = "用户登录";
+        title.innerHTML = "Subscriber Login";
     else if(name == "zyz")
-        title.innerHTML = "志愿者登录";
+        title.innerHTML = "Volunteer Login";
     else if(name == "gzry")
-        title.innerHTML = "工作人员登录";
+        title.innerHTML = "Personnel Login";
 }
 function registername(name) {
     var registertitle = document.getElementById("register").getElementsByTagName("h1")[0];
     if(name == "yh")
-        registertitle.innerHTML = "用户注册";
+        registertitle.innerHTML = "Subscriber Register";
     else if(name == "zyz")
-        registertitle.innerHTML = "志愿者注册";
+        registertitle.innerHTML = "Volunteer Register";
 }

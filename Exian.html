@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mode.css">
+    <title>Xi'an scenic</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <link rel="stylesheet" href="css/english.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="page-header">
+        <h1>
+            <small>Introduction of Shanxi scenic spots in Xi'an</small>
+        </h1>
+    </div>
+
+    <div class="places" id="bingmayong">
+        <div class="pictures-div">
+            <img src="img/bingmayong.jpg">
+        </div>
+        <h2>Terra Cotta Warriors</h2>
+        <p class="lead">
+            Terra Cotta Warriors<br/>
+        </p>
+        <p>That is, Qin Shi huang Terracotta Army, also called Qin Terracotta Army or Qin terracotta warriors, the first batch of national key cultural relics protection units, the first batch of Chinese world heritage, is located in the Mausoleum of the First Qin Emperor of 1.5 kilometers east of Mausoleum of the First Qin Emperor, Lin tong District, Shanxi Province.</p>
+        <p>Terracotta Army is a category of ancient tombs. In ancient times, people were sacrificed and slaves were the appendages of the slave owners. Slaves were buried as slaves after they died. Terracotta Army is a form of sacrificial objects made of soldiers, chariots, horses and soldiers.</p>
+        <p>n March 4, 1961, Mausoleum of the First Qin Emperor was declared the first batch of national key cultural relics protection units by the State Council. In March 1974, Terracotta Army was discovered. In 1987, Mausoleum of the First Qin Emperor and Terracotta Army pit was approved by UNESCO as the world heritage list. It was praised as "the eighth wonder of the world". It has been visited by more than 200 heads of foreign heads of state and government, and has become a golden card of the splendid civilization of the ancient Chinese. It is known as one of the rare treasures of the ten ancient tombs in the world.</p>
+        <p class="lead">
+            Location: the Imperial Tomb Museum of the first emperor of the Qin Dynasty<br/>
+            Open time: 09:00 - 17:00<br/>
+            Ticket price: 140 yuan<br/>
+            It is recommended for a long time to play: 3 hours<br/>
+            Suitable for the season: all seasons are suitable<br/>
+
+        </p>
+    </div><!--兵马俑-->
+
+    <div class="places" id="furongyuan">
+        <div class="pictures-div">
+            <img src="img/furongyuan.jpg">
+        </div>
+        <h2>Tang Paradise</h2>
+        <p class="lead">
+            Job location: Scenic restaurant south door Qujiang Golden Eagle, one-stop City fashion high-end lifestyle center<br/>
+            Food: working meals, restaurants<br/>
+            Accommodation: Xi'an's Han Wen Wu youth hostel at Taiping fort village entrance<br/>
+
+        </p>
+        <p>The Datang Hibiscus garden is located in the Qujiang development area in the south of Xi'an City, Shanxi Province, on the southeast side of the big wild goose pagoda. It is built in the north of the Furong garden site in the original Tang Dynasty. It is rebuilt in the style of the imperial garden style of the Tang Dynasty. It is the first large imperial garden style park style cultural theme park in China, with an area of one thousand mu, which covers an area of the Tang Dynasty. The area of water is three hundred mu.</p>
+        <p>In the garden, there are Zi yun buildings, official women's houses, royal banquet palace, Apricot Garden, Fang Lin Yuan, Feng Ming's nine day theater, Tang city and many other antique buildings. It is the largest imperial complex of Tang Dynasty in China. The scenic area is based on the overall planning and architectural design of Zhang Jin qiu, academician of the Chinese Academy of engineering.</p>
+        <p>Datang Furong garden began construction in 2002, completed in 2004, and officially opened to the public in April 11, 2005 (the 3th day of the third month of the Chinese lunar calendar). In January 17, 2011, it was awarded the national AAAAA tourism scenic spot by the National Tourism Administration.</p>
+        <p class="lead">
+            Location: Qujiang Development Zone, Chengnan, Xi'an City, Shanxi Province, Southeast of Dayan Pagoda Open time: 9:00-21:00<br/>
+            Ticket price: 120 yuan in peak season, 90 yuan in off-season<br/>
+            Suitable season of play: spring and summer<br/>
+            It is recommended for a long time to play: 2-3 hours<br/>
+
+        </p>
+    </div><!--大唐芙蓉园-->
+
+    <div class="places">
+        <div class="pictures-div" id="shanxibowuguan">
+            <img src="img/shanxibowuguan.jpg">
+        </div>
+        <h2>Shanxi History Museum</h2>
+        <p>Shanxi History Museum, China's first large-scale modern national museum, the first "AAAA" tourist attractions in China, is known as the "ancient capital of the Pearl, the treasure house of China." There are 1 million 717 thousand and 950 collections of cultural relics. Among them, there are 762 pieces of cultural relic (Group) and 18 national treasure - grade cultural relics, of which 2 are the first to prohibit from going abroad.</p>
+        <p>The architectural appearance of the Shanxi History Museum highlights the elegant appearance of the Tang Dynasty, and the ancient emperors of Chang an all have thirteen feudal dynasties, such as Zhou, Qin, Han, Sui and Tang Dynasties, which have rich ground and underground cultural relics and formed the unique historical and cultural features of Shanxi.</p>
+        <p>Shanxi history museum is the predecessor of the thirty-three year of the Republic of China (1944) in June set up in the "Shanxi Provincial History Museum", in 1950, renamed the northwest Historical Museum, in 1952, renamed the northwest history museum, June 1955 renamed Shanxi province museum. In 1983, in accordance with the instructions of prime minister Zhou Enlai, he began to build a new museum on the present site. It began to break ground in 1986, and was officially opened in June 20, 1991. In 2016, the Shanxi Museum of history was selected by the Chinese society of cultural relics and the Chinese Architectural society as the "architectural heritage of China in twentieth Century". In December 2017, it was selected as the first batch of the first batch of national primary and secondary school students' practical education base list.</p>
+        <p>In 2008, the Shanxi Museum of history was awarded the national level museum, and it was designated as the central and local level national key Museum in 2009. The area covers an area of 65 thousand square meters. The construction area is 55 thousand and 600 square meters, the area of the cultural relics reservoir area is 8 thousand square meters, and the exhibition hall area is 11 thousand square meters. The collection of cultural relics is a simple stone tool used in the initial stage of ancient human beings, and the time span of all kinds of utensils in social life before 1840 is about one million years. There are not only many cultural relics, but also high quality and wide value.</p>
+        <p class="lead">
+            Location: No. 91, Xiao Zhai East Road, Yanta District, Xi'an, Shanxi.<br/>
+            Open time: open from Tuesday to Sunday<br/>
+            Collection boutique: bronze ware of Shang and Zhou dynasties, pottery figurine of all dynasties, gold and silver ware of Han and Tang Dynasties, murals of Tang tomb<br/>
+            The number of collections of collections: more than 170 million pieces (Group)<br/>
+            Museum grade: national first level Museum<br/>
+            Ticket price: free, with valid documents for tickets.<br/>
+            It is recommended for a long time to play: 2 - 3 hours<br/>
+            Suitable for the season: all seasons are suitable<br/>
+        </p>
+    </div><!--陕西历史博物馆-->
+
+    <div class="places">
+        <div class="pictures-div" id="qinling">
+            <img src="img/qinling.jpg">
+        </div>
+
+        <h2>Qinling Mountains</h2>
+        <p class="lead">
+            Job: farm music Zoo
+        </p>
+        <p>Located between 32 degrees and 34 degrees north latitude, between the Guan zhong Plain and the south of the Han jiang Valley, Qin ling Mountains is the watershed of the four rivers of the Jialing River, the Luo river, the Wei he and the Han jiang River. It is the boundary mountain of Guan zhong Plain and southern Shanxi Province in Shanxi province. </p>
+
+    </div><!--秦岭-->
+
+
+</main>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

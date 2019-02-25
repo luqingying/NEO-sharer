@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO-sharer—Route 1</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/luxianmode.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/english.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid blue_bg">
+    <div class="container">
+        <h1>Route 1 introduction:</h1>
+        <p class="introduction">Long march spirit, long march style vivid reflection of the culture is the Chinese communists revolution, Sichuan is the main stage show the long march spirit, the Chinese red army of workers and peasants the most brilliant brilliant chapter depicts the long march on the way. Therefore, in the Sichuan province left many red memory, from the Red Cross on the path of the red army long march to realize the great rejuvenation of the Chinese nation great man Dengxiaoping's former residence, all reflect the strong fighting spirit of the Chinese communists, let us follow the pace of the red army, to experience the land of the revolution red flavor.</p>
+        <h2>1. Red army ferry</h2>
+        <p><strong>Introduction: </strong>the red army ferry is located in sichuan province cangxi county territory, is the red fourth-front armies caused by the long march, crossing campaign memorial of Jialing river, after the founding of new China, as a reminder of the red army soldiers brave performance, to commemorate the red army victory crossing, CangXi people will tower below the ferry named "Red Cross", belongs to the national hundred classic red tourism attractions. Here, there are mountains and rivers, the terrain is dangerous, the trees are forested, the scenery is pleasant, and the majestic statues of the red army are like the arrows of the unstrung arrows, and they all show the bravery and bravery of the red army soldiers.</p>
+        <p><strong>Related cultural story: </strong>the red army ferry is the origin of the long march of the red square, and the memorial land of the Jialing river, where the red square army fought bravely and invincible. Fourth front in 1935, the Chinese red army of workers and peasants to tie in with the central red army northward resist Japanese aggression, ordered to Yangtze river to the west, and the nationalist party warlords goons 53 group's troops, in the heavily fortified building defensive works line, which is 200 km long, in an attempt to rely on Jialing river itself, to stop our army to the west, to smash the enemy's plot, to carry out the policy of "two into the Yangtze river, north the resist Japanese aggression", for the red army is tower hill ferry crossing the Jialing river, as the enemy, sweeping, the nationalist party, struggling line at that time, the red army diversionary measure, set off on a new journey.</p>
+        <p>Red Cross is here as a history of the Chinese red army revolution holy land, since the western expedition, the red army to sichuan-gansu border development, consolidate and expand the sichuan-shaanxi Soviet area, the red fire burning in Daba mountain, Chuanshan Soviet regime banner quickly thrown into everywhere.</p>
+
+        <h2>2. Sichuan and Shaanxi revolutionary base areas.</h2>
+        <p><strong>Introduction: </strong>In sichuan-shaanxi revolutionary base area of sichuan and shaanxi provinces border between qinling and DaBaShan District, is China's fourth front red army of workers and peasants in 1932 strategic shift to sichuan, shaanxi border, in the border region in sichuan and shanxi party organizations and the masses of working people cooperation to establish a Soviet area, is the Chinese Soviet republic's second-largest area. The martyrs' cemetery was built for the memory of the red army soldiers who died in the creation and protection of the sichuan-shaanxi Soviet area.</p>
+        <p><strong>Related cultural story:</strong>in October 1932, anhui revolutionary base areas in the fourth counter-campaign against "encirclement and suppression" fails, the red fourth-front armies main western expedition, in February 1933, successively in tongjiang province first party congress in sichuan and shanxi, sichuan and Shanxi Province for the first time, congress of workers, peasants and soldiers, established the provincial party committee of the communist party of China (sichuan-shaanxi and chuanshan Soviet government, marked the tong, south, and centered sichuan-shaanxi revolutionary base area was born. In March 1933 the sichuan-shaanxi Soviet area and win the famous battle of empty mountain dam, crushed Chiang kai-shek and launched a "siege" three road, sichuan warlords and the base area the reds got great development. In August 1933, the military and people of sichuan-shaanxi province won the victory of three offensive campaigns, namely, yi-nan, ying, qu and yi da, and the sichuan-shaanxi Soviet area entered its heyday. In October 1933, the soldiers and civilians of the sichuan-shaanxi Soviet area smashed the "six-way siege" by Chiang kai-shek and the sichuan warlords, and achieved a brilliant result. In 1935, the long march on the way and of the political bureau of the central military commission issued instructions, ordered the red fourth-front armies "in the period of recent attack to the west of the jialing river", at this point, the red fourth-front armies force jialing river, transfer to the western sichuan, abandoned the sichuan-shaanxi revolutionary base areas.</p>
+
+
+        <h2>3.The site of the Anti Japanese war in Jianmen Pass </h2>
+        <p><strong>Introduction:</strong>brief introduction：The Red Army blood battle Jianmen Pass site refers to the Red Star Plaza, located in the Jianmen Pass scenic area in Jiange County, Guang'an, Sichuan province. It is composed of the Red Army conquering the Jianmen Pass monument, the Red Army conquering the commemorative memorial hall, the general of the generals and the stone engravings, and is one of the national patriotic education bases and 100 red tourist attractions. The Red Army conquering Jianmen Pass memorial hall is divided into two parts. The first part shows the major revolutionary fighting and the revolutionary cultural relics left by the Red Army in Jianmen Pass; the second part uses the international advanced glass screen projection and the multi screen fusion technology of the projector to vividly simulate the history of the Red Army bathed blood Jianmen Pass. The scene helps tourists understand the culture of war and red culture, and feel the heroic deeds of the brave red army fighters. </p>
+        <p><strong>Related cultural story:</strong> At the end of March 1935, after the red front army forced the crossing of the Jialing River, the soldiers were divided into three roads, sweeping the enemy along the river with the strong wind sweeping the leaves. After careful examination of the terrain of Jianmen Pass, the commander of the Red Army commander, Wang Shusheng, set down the policy of "avoiding the front, combining the enemy side with the surprise attack." At the dawn of April 2nd, the Red Army surrounded Jianmen Pass from three East, West and south, but was severely cut off by the enemy. The Red Army of the three way was immediately ordered to act. The enemy's various groups of work carried out a point by point attack, quickly cleared the stronghold of the outside of the sword gate, forced the enemy to narrow the defensive range and fled to the main position. On the 2 day and 11 o'clock, Wang Shusheng issued the order to attack the main peak. The second battalion, known as the "night attack and victorious army", launched a strong offensive against the main peak under the cover of mortar and machine gun fire. The warriors of the second battalions approached the enemy positions hard along the winding mountain road with bullets and bullets. However, the Sichuan army relied on the dangerous terrain and sophisticated weapons to form intensive firepower on the path of the Red Army's upward attack, desperately resisting it, and the first two attacks were tragic failure. At the critical moment, the artillery of the Red Army played an important role. The artillery of the Red Army took serious aim at it, and one shot continuously hit the group fortifications at the commanding heights of the enemy. The red army quickly broke into the enemy's fortifications and fought fiercely with the enemy. The Red Army soldiers fought hard, fought hard, flew up to the top of the mountain, put a flag on the main peak, and the Red Army successfully conquered Jianmen Pass.  </p>
+        <p>This magnificent feat was recorded vividly by the Red Army conquering the relief sculpture around the memorial tablet of Jianmen Pass. Under the relief of eight sides, the names of the more than 1200 heroes of the Red Army who built the Jiange Soviet Area and sacrificed the battlefield were respectively engraved. All around the stele, the red army forced the Jialing River, the bathed blood fire temple, the Red Army of the sword gate, the bloody battle of Jianmen Pass, the army and the people fish and water, the great victory of the Jianmen Pass, the Jiange conference, the Soviet regime and so on, which perfectly reproduced the Red Army's bloody struggle and bravery of the Red Army during the Anti Japanese war. </p>
+        <p>Cultural story ：Jiange County of Sichuan province belongs to the old revolutionary base area of Sichuan and Shaanxi, and Jianmen Pass has always been a battleground for soldiers. It is known as "Getting the Jianmen Pass is like getting Sichuan."</p>
+
+
+        <h2>4.Deng Xiaoping's hometown</h2>
+        <p><strong>Introduction:</strong> The tourist area of Deng Xiaoping's hometown is located in the Guang'an District of Guang'an, Guang'an, Sichuan. It covers an area of 3.19 square kilometers. It is a complex scenic spot with commemorative memory, patriotism education, ancient town culture, new socialist countryside exhibition and leisure holiday. The main attractions include the Deng Xiaoping's former residence, the ink stone pond, the imperial yard, the silkworm yard, the north mountain small school, the clear water pond, the monument, the German square and other 20 places of Deng Xiaoping's childhood and youth, and the memorial facilities such as the Museum of Deng Xiaoping's former residence, the Bronze Statue Square of Deng Xiaoping, and the Deng Xiaoping Burmese Museum. In 2014, Deng Xiaoping's relatives donated a batch of relics and relics to the Museum of Deng Xiaoping's former residence and the Deng Xiaoping memorial hall, a total of 441 pieces, which fully demonstrated the historical footprints of Deng Xiaoping's life. </p>
+        <p><strong>Related cultural story:</strong>Cultural story：Deng Xiaoping's hometown perfectly reproduced the track of Deng Xiaoping's life in adolescence. Deng Xiaoping's former residence is an ordinary courtyard house in East Sichuan, which is called "Deng home old yard". In August 22, 1904, comrade Deng Xiaoping was born and lived here with his family for 15 years until 1919. Hanlin yard accompanied Deng Xiaoping for 10 years of enlightenment reading, which is where Deng Xiaoping grew and developing. The clean well water of Deng home Lao well raised a great man Deng Xiaoping until he left his hometown. The cattle ox Ping is the place where Deng Xiaoping used to play cattle and play in childhood, leaving Deng Xiaoping's strong figure and loud reading sound forever. Wash the ink stone pool is the place where Deng Xiaoping took water to study ink and calligraphy when he was young, and he carried the memory of Deng Xiaoping studying hard in his childhood. The small school in Beishan was the place where Deng Xiaoping accepted the initial new education. Deng Xiaoping accepted the early new ideas here ,which had an important influence on the youth Deng Xiaoping's decision to go to study abroad.  </p>
+        <p>The Deng Xiaoping Memorial Hall and the exhibition hall of Deng Xiaoping's former residence show the life state of Deng Xiaoping's youth, middle age and old age through the display of Deng Xiaoping's relics and cultural relics, and make up for the blank of the historical record of Deng Xiaoping leaving his hometown, forming a complete historical track of Comrade Deng Xiaoping. Deng Xiaoping's Memorial Hall shows Comrade Deng Xiaoping's daily life, hobbies, family affection, work scene and so on through displaying Comrade Deng Xiaoping's classic quotations, handwriting, some personal writing instructions, speech outline and evaluation, etc,and explains Comrade Deng Xiaoping's wisdom, simplicity, warm and wisdom,which is just The character of the great man.</p>
+        <p>In front of the bronze statue of Deng Xiaoping,there is always filled with flowers and the remembering, including the old man who needs to support the front and the flower, and the child in the arms and babble, all in sincere thanks and heavy commemoration, this is the warm reaction brought by Comrade Deng Xiaoping's personality charm and his historical contribution. </p>
+        <h2>5.Zhude's hometown </h2>
+        <p><strong>Introduction:</strong> Zhu De's hometown is located in Zhujiawan, llun village, Nanchong, Yilong County, Yilong County, Sichuan province. The main body of Zhu De's residence, Zhu De birthplace and Comrade Zhu De's memorial hall is the integration of the cultural resources such as Ding's manor, the puppet of North Sichuan, and other geographical indications of Linlang mountain and four square fields, and the integration of German culture, red culture and Hakka. Culture, farming culture, the integration of natural landscape and cultural landscape, is a national red tourism demonstration area, which combines "great people to see, travel and spend, holiday and leisure". The core area of Zhu De's hometown is 5.6 square kilometers, involving 1605 households and 5385 people of 32 villagers groups in 5 villages. It belongs to the original ecological open scenic area. It has completely and truly restored the living environment and life situation of Comrade Zhu De's youth period. It is one of the 12 key red tourist areas and 30 red boutique tour routes in the country. After the "national patriotism education demonstration base", "national honest and clean government education base", the first "scenic zone village" tourism poverty demonstration scenic spot and other honorary titles. </p>
+        <p><strong>Related cultural story:</strong>Cultural story：In 1886, Zhu De was born in the warehouse of a landlord in Yilong County, Nanchong, Sichuan province. The parents were ordinary tenants who rented the houses of the local merchant DING. Not long after, Zhu De adoptive to the great uncle and his wife to raise.foster parents to live in the next village in order to live, which is the place where Zhu De has been living in the youth. The site is located around the mountains, facing the south, wide field of vision, surrounded by a series of small hills, having beautiful environment and excellent air, which can be concerned as a rare treasure. Zhu De's family to lease DING landlord land farming as the main industry, in ordinary life through the production of bean curd subsidies for household.Llittle Zhu De often helped housework, frugal and hard-working. These experiences in childhood made young Zhu De develop a spirit of simplicity, magnanimity and perseverance, which had a great impact on Zhu De's whole life. When he was a child, his mother explained Zhu De's shame and filial piety on the one hand, and it played an important role in shaping Zhu De's noble character. Later, Zhu De joined the Chinese League. In July 1917, he became a brigadier of the Dian army. Under the influence of the October revolution and the 4th May Movement, Zhu De gradually accepted Marx doctrine and went to Germany to seek revolutionary truth and joined the Communist Party of China. At this point, comrade Zhu De's life began to be closely related to Marx doctrine and the future of People's Republic of China.  </p>
+        <p>The measure is as big as the sea, and the will is like steel. He is as strong as the sea. He is as solemn as the sea. He is as broad as the sea. He is as deep as the sea. This is a true portrayal of Comrade Zhu De's lofty quality.</p>
+
+        <h3>Transportation :<small>(setting up tourist special line, more mountain road, bus transportation all the way)</small></h3>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>Sword gate pass - red army crossing </td>
+                <td>(124 km, about 1 hour 49 minutes, car, lanhai highway)</td>
+            </tr>
+            <tr>
+                <td>Red army crossing - chuanshan revolutionary base area</td>
+                <td>(123 km, about 2 hours 45 minutes, automobile, 347 national road)</td>
+            </tr>
+            <tr>
+                <td>Sichuan and shaanxi revolutionary base - zhu DE former residence</td>
+                <td>(76.2km, about 1 hour, 8 minutes, car, silver kun highway)</td>
+            </tr>
+            <tr>
+                <td>Zhude's former residence, the former residence of Dengxiaoping’s hometown </td>
+                <td>(133 km, about 2 hours, automobile, yinkun expressway)</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/homepage.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

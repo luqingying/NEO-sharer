@@ -1,0 +1,263 @@
+.sub{
+    margin: 10px;
+    float:right;
+}
+.media-object{
+    width: 100px;
+}
+#hongjunluxian .container .row .col-md-2{
+    width: 20%;
+    display: inline-block;
+}
+.blue_bg{
+    padding-top: 50px;
+}
+#search-result .modal-header{
+    height: 40px;
+    padding-bottom: 10px;
+    background: none;
+}
+#search-result .modal-header .close span{
+    top:-5px;
+    position: relative;
+}
+#search-result .modal-content{
+    position: relative;
+    top:-65px;
+}
+#search-head{
+    position: relative;
+    top:-30px;
+    width: 620px;
+    left: 0;
+    right: 0;
+    margin:auto  auto -30px auto;
+}
+.search-label{
+    font-size: 20px;
+    color: #374356;
+}
+#searchinputmodal{
+    height: 44px;
+    width: 300px;
+    margin: 20px;
+    border:2px solid #d3d3d3 ;
+    border-radius: 4px;
+}
+#search-head button{
+    position: relative;
+    top:-3px;
+    height:44px;
+    line-height: 22px;
+    background:#374356;
+    font-family: 微软雅黑;
+}
+
+#search-result h2{
+    width: 100%;
+    font-size: 20px;
+    background-color:ghostwhite;
+    height: 40px;
+    line-height: 40px;
+}
+#search-result h2 span{
+    margin-right: 10px;
+}
+.search-block a{
+    font-size: 18px;
+}
+.search-small-block{
+    border-bottom: #d3d3d3 solid 1px;
+    padding:15px 5px ;
+}
+
+/*
+body{
+    background-color: azure;
+}
+h4{
+    position: relative;
+    top:10px;
+    left:25px;
+    width: 230px;
+    margin: 10px 0;
+}
+nav,.search,.nav-main,.nav-center{
+    height: 55px;
+    line-height: 55px;
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    box-shadow:1px 1px 10px darkgray ;
+    position: fixed;
+    top:0;left: -1px;
+    background-color: white;
+}
+.nav-center{
+    width: 80%;
+    min-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.glyphicon-search{
+    position: relative;
+    left: -20px;
+    top:4px
+}
+.search{
+    width: 500px;
+    height: 2em;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.nav-main{
+    list-style: none;
+    float: right;
+}
+.nav-li{
+    float: left;
+    padding:0 2em;
+}
+.dropdown-menu{
+    left:2em;
+}
+.top{
+    width: 100%;
+!*    transform: translate(-50%,0);*!
+    position: relative;
+    left:0;
+    top: 0;
+}
+main{!*分类中的一部分  没在hopmepage里面出现*!
+     width: 1000px;
+     transform: translate(-50%,0);
+     position: relative;
+     left: 50%;
+     top:85px;
+ }
+#left{
+    width: 56%;
+    min-width: 700px;
+    top:85px;
+    left:10%;
+    position: relative;
+    display: inline-block;
+}
+#right{
+    width: 23%;
+    min-width: 287px;
+    top:85px;
+    right:10%;
+    height: 800px;
+!*    background-color: white;
+    border: 1px solid lightgray;*!
+    position: absolute;
+    display: inline-block;
+}
+
+#top-left-div{
+    position: relative;
+    top:0;left: 0;
+    margin: 0;
+    width: 70%;
+    display: inline-block;
+    font-size: 26px;
+}
+img{
+    width: 100%;
+}
+ .img-decoration{
+    width:100%;
+    margin:auto;
+    position: relative;
+    top:-2em;
+    background-color:rgba(0,0,0,0.3);
+    color: white;
+    height:2em;
+    line-height: 2em;
+    text-align: center;
+}
+#main-decoration{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 28%;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid lightgray;
+    height:calc(100% - 52px);
+    overflow: hidden;
+}
+
+#pictures{
+    width: 100%;
+    left: 0;
+    position: absolute;
+    margin:auto 0;
+    font-size: 23px;
+    padding: auto  -20px;
+}
+
+.pictures-div{
+    overflow: hidden;
+    display: inline-block;
+    margin:0 10px -1em;
+    width: 30%;
+}
+
+
+!*
+.pictures-div:nth-child(odd)
+{
+   float: left;
+}
+.pictures-div:nth-child(odd)
+{
+    float: right;
+}*!
+.breadcrumb{
+    position: relative;
+    width: 230px;
+    position: relative;
+    left: 20px;
+    padding-left:5px;
+    background: none;
+    margin:3px 0;
+}
+hr{
+    width:230px;
+    margin:15px auto;
+}
+textarea{
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+.sub{
+    float: right;
+}
+.breadcrumb li{
+    height: 2em;
+    line-height: 2emS;
+}
+.media-object{
+    width: 80px;
+}
+#comment{
+    top:70px;
+    position: relative;
+}
+.panel-body{
+padding:0;
+}
+.list-group-item{
+    border-right: none;
+    border-left: none;
+}
+.list-group-item:first-child,.list-group-item:last-child{
+    border-radius:0;
+}*/

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO-sharer—成都游记</title>
+    <link href="css/youjimode.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/english.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid blue_bg">
+    <div class="container">
+        <h1>Chengdu, the delicacies hidden in the alley</h1>
+        <hr>
+        <p>Walking away is the most beautiful luxury and the most brilliant freedom in life.</p>
+        <p>Coveted the charming food of Chengdu for a long time and yearned for Chengdu's leisurely life. This time it
+            happened to be false, so decisively decided to go to Chengdu.
+        </p>
+
+        <p>Travel is from a place where you are tired of getting tired of being bored. I am not tired of Nanjing, but
+            the complicated and busy work makes me breathless. Travel is the best way to escape temporarily. </p>
+        <p>Homework is not detailed, scenic spots tourism planning also did not think well, so on the road. They don't
+            buy the maps. They rely on the "Google map" and "public comment" on the mobile phone every day, print the
+            Chengdu gourmet strategy, visit the scenic spots, taste the food, and the unknown travel, although sometimes
+            surprise and surprise. </p>
+
+        <p>I saw an article in the magazine N years ago, 'plan a small escape', leaving a deep impression. The reason
+            for the small escape is also the reason why I always give myself a "lazy" reason.' </p>
+
+        <p> "Every day of small escape, is the so-called" steal "half day leisure, even if a quiet afternoon tea, eating
+            a piece of chocolate, is also a method of decompression, to find a small way to escape, not in the dream of
+            painting a large escape route, is the real" live in the present! " </p>
+
+        <p> 'If you know how to run away, our emotions will not work out, and if you paint a big cake for yourself every
+            day, and continue to endure a life of extreme hunger in the spirit, I am afraid that a big cake is eaten,
+            and the moods and pressure cookers will explode first. '' </p>
+
+        <p>Detailed Chengdu travel notes will be sent later.
+        </p>
+
+        <h2> Long chaoshou
+        </h2>
+        <p>
+        <p>"Copying hands" is a special way for people in Sichuan to recognize "ravioli".
+        </p>
+        <p>
+            Started in the 40s of the last century, at that time, at that time, some of the Zhang Guangwu and other guys
+            in Chunxi Road 'thick flower tea club' consulted a joint-venture to open a copy hand shop. The main features
+            of the Dragon hand are: thin skin, soft stuffing, and fresh soup. The hand skin is made of super flour and a
+            small amount of ingredients, kneaded and kneaded slowly, and rolled into a translucent shape, such as thin
+            paper and fine silk. The meat is tender and smooth, and the flavour is delicious. The original soup of
+            dragon hand is made from the meat of chicken, duck and pig by stewing slowly. The soup is white, thick and
+            fragrant.</p>
+
+        <p>The husband called a bowl of seafood. There are letinous edodes, bamboo shoots and some seafood, and the soup
+            is very delicious.
+        </p>
+        <img src="img/抄手.jpg">
+        <p> Thin skin, tender meat, fresh soup, indeed, is one of the snacks in Chengdu.
+        </p>
+        <img src="img/抄手2.jpg">
+        <p> I called a hot and sour bowl. For me who like spicy food, I feel better than seafood. There are also
+            sauerkraut in the soup, with spicy spicy oil, sour and spicy, good hands, soup is also very good. However,
+            it may be a little too bad to eat this on an empty stomach early in the morning.</p>
+
+        <h2> Chen Mapo bean curd
+        </h2>
+        <p>At noon, a "Chen Mapu tofu" recommended by the Internet is also a well-known store in Chengdu with several
+            branches. It is estimated that people in Chengdu know this house, because when we can't find the place, we
+            ask several passers-by, and we all know where they are. </p>
+        <p>Chen Ma Po tofu is a famous brand of "China Time-honored Brand", which is named by the state. It started in
+            the early Qing Dynasty tongzhi (1862), opened in Beijiao, Chengdu Wanfu bridge. Formerly known as Chen
+            Xingsheng restaurant, the chef is Chen Chunfu's wife. The color and lustre of Chen's beancurd is red and
+            bright, the beef grain is crisp and fragrant, the jute, the spicy, the fragrant, the crisp, the tender, the
+            hot, the whole, and the Sichuan bean curd is very fast. When a good person looks at Chen's face, he will
+            play the "Chen Ma Po tofu". As a result, the shop is crowned with 'Chen Mapo bean curd'. In the late Qing
+            Dynasty, Chen Mapu tofu was listed as a famous food in Chengdu. </p>
+
+        <p>
+        </p>
+        <p>Two people eat less, ordered a "Mapo Tofu" and a "couple lung tablet". </p>
+        <img src="img/豆腐1.jpg">
+        </p>
+        <p>The Mapo Tofu is amazing enough. Does Nanjing's Mapo Tofu have such a rich sauce? Absolutely not. </p>
+        </p>
+        <p>On micro-blog, we saw authentic video tutorials of Mapo Tofu. There are nearly more than 10 kinds of light
+            seasoning.</p>
+        <p>Stir it lightly and stir the top seasoning. Tofu is very tasty. It looks very spicy, but it's not spicy. At
+            last, my husband could not bear to feel numb. His tongue felt like bubbles.</p>
+        <p> Pork Lungs in Chili Sauce。
+        <p> The lungs of the husband and wife bought from the Nanjing restaurant also look different. It is still a
+            heavy flavoring sauce, spicy and spicy, and even a husband who has always been less spicy and spicy.</p>
+        <h2> Nine fragrant hot pot of Shu
+        </h2>
+        <p>On the first day's dinner, I went to eat the authentic Sichuan flavor hotpot "Shu nine fragrance", which is
+            also one of the ten hotpot in Chengdu. </p>
+
+        <p>Chengdu hotpot is spicy and spicy early, so we did not dare to order the whole hot pot and ordered a mandarin
+            duck pot. As soon as the pot comes up, it feels funny. The white pot is surrounded by a small circle of hot
+            saucepans. The hot pot in Chengdu is mainly hot. </p>
+
+        <p>In fact, I really want to see the same kind of hot pot as the "Nine Palace" style. It looks very interesting,
+            but not all spicy food, but unfortunately it missed.</p>
+        <p>There are only two kinds of seasoning for hot pot: "dry dish" and "oil dish". The oil saucer is sesame oil. I
+            made a picture below the dry dish. There are five kinds of materials -- pepper, sesame, pepper, and I don't
+            know. On the table, a bowl of garlic paste and a bowl of coriander were placed on the table. So I didn't
+            taste a fresh dish or an oil dish. It turns out that the oil saucer is better. The saucai is already spicy
+            and spicy, and the cooked food is delicious with garlic sauce + cilantro + sesame oil. </p>
+
+        <p>-_-|||Roll, hot oil! Look, the red soup is tempting. I asked myself to be able to eat spicy people, but after
+            eating a large half of the red pot, it was really hot. Two people had a tear in tears, and finally changed
+            to the white pot. </p>
+        <p>⊙﹏⊙"Public comment" is turned out. What is the recommended food for fire? A thousand layers of goose, goose
+            sausage, nine spice beef, and some vegetables.
+        </p>
+        <p> Goose sausage chopsticks are pressed down and scalded for five seconds. Beef is also very tender. One
+            thousand layers of belly had not been photographed, so the waiter gave me a whole pan.
+        </p>
+
+
+        </p>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO-sharer—青城山游记</title>
+    <link href="css/youjimode.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/english.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid blue_bg">
+    <div class="container">
+        <h1>Visiting Dujiangyan and Qingcheng Mountain</h1>
+        <hr>
+        <p> Every day the city was faint, and the summer solstice was all mountain climbing.
+
+        </p>
+        <p> Because of the water of the river, he stole half a day.</P>
+        <img src="img/dujiangyan1.jpg">
+
+        <hr>
+        <p><strong>[Qingxi garden]<br></STRONG>
+            The memorial archway, which has passed through the entrance of Dujiangyan scenic spot, has entered a "Suzhou
+            garden" in West China. The gentle and elegant Sichuan gardens, one of the guests who come from far away, is
+            a welcome bedding for the upcoming journey. Our Sichuan is also a soft sister in the south of the Yangtze
+            River. You want a little bridge water, a green tree temple a lot, but you can not look down on this "soft
+            sister" in the soft and strong.
+        </P>
+        <p><strong>[lie iron]. Little creativity and great wisdom<br></STRONG>
+            If you come to Dujiangyan, you want to find out how Li Bing and his father and his son took the fluid
+            mechanics two thousand years ago. By the way, pick up a knowledge principle that physics is about to forget
+            in high school. The "lying iron", which is not far from the door, is like a small teacher, quietly opening
+            the lecture and saying "the lesson" to you. <img src="img/dujiangyanshuizhu.jpg">
+        <p> Several columns of water are ejected from the ground, forming a dome shaped water screen. If there is a
+            sunny day, I think the water screen will reflect the colorful sunlight and gorgeous. Under the water screen,
+            four columns of iron lie on the side of the river, as the depth mark of Neijiang's annual repair beach,
+            meaning to dig here - you can't dig down any more.</P>
+        <p><strong>[Weir Gong Dao]. History is beckoning<br></STRONG> Weir Road is a long but exquisite road. The 12
+            sides of the left and right sides cast the weirs of the two weirs, and the 248 leading faucets spit out the
+            spring water for a moment.</P>
+        <img src="img/yangongdao.jpg">
+        <p> Thousands of spring comes to autumn, Zhang Song ginkgo will still be on time in autumn to become a golden
+            umbrella, and fall in the autumn of autumn. Walking today, remembering the past, we can only sigh "odd ah,
+            wonderful" again and again.</P>
+        <img src="img/zhangsongyinxing.jpg">
+        <img src="img/zhangsong.jpg">
+        <hr>
+        <p><strong>[Tianfu Old Tea House]. Give me a time of tea<br></STRONG>
+            On the left side of the lying iron and Weir Road, there is another elegant tea house. This pavilion,
+            surrounded by bonsai, is a resting place for this trip. People in Sichuan love to drink tea and walk here.
+            Even if it is not the authentic Sichuan people, it is hard not to be attracted by this simple and elegant
+            tea stall for tea.</P>
+        <img src="img/chaguan1.jpg">
+        <img src="img/chaguan2.jpg">
+        <p> At the end of the play, the tea in the cup still has more than the temperature, you lift the lid of the
+            bowl, see the air a little bit of water vapour off the cup mouth, just feel that time seems to walk more
+            slowly, slow...</P>
+        <hr>
+        <p><strong>[volong Guan].<br></STRONG>
+            Fu Long Guan is standing on the top of the ancient garden. The three sides are cliffs and precipice, which
+            are magnificent. This is for later generations to commemorate Li Bing's father and son's Dragon lock. The
+            three weight of the palace, a step by step, and the stone statue of Li Bing and the people in the Han
+            Dynasty and the ancient objects of the Han Dynasty, as the direct beneficiaries of the hydraulic feats of
+            the two thousand years ago, I have long been respectful and earnest to pay homage to them.
+        </P>
+        <img src="img/guanlongfu.jpg">
+        <p> It is especially recommended that you visit the post Hall of Fulong Guan, which is the best viewing platform
+            overlooking the bottle mouth. How can a dragon give in under a pillar? If you are a brave warrior, you will
+            surely dance and dance like a dragon when you see you.</P>
+        <img src="img/guanlongfu2.jpg">
+        <hr>
+        <p><strong>[vase mouth]<br></STRONG>
+            The Neijiang water from the mouth of the fish has no calm. It is still proud to be proud of its unquagious
+            temper and wild nature. Li Bing, using the scientific principle of "heat expansion and contraction", drilled
+            a total water intake of more than 40 meters long and more than 20 meters wide in Neijiang, which skillfully
+            controlled the unyielding dragon. From then on, the river water flowing into the Chengdu plain became plain
+            through the water system of the
+            cobweb.<br>
+        </P>
+        <hr>
+        <p><strong>[Fish mouth].Diverting masterpiece<br></STRONG>
+            The sightseeing bus has not arrived yet, and its ears are already booming. The spectacular fish mouth is
+            really something you need to see with your own eyes. The water from the upper reaches of the Minjiang River
+            reaches the mouth of the mouth of the fish mouth, which is automatically divided into two schools of water.
+            One is used as Neijiang, used for irrigation, and a row of rivers for flood discharge.</P>
+        <img src="img/yuzui.jpg">
+        <hr>
+        <p><strong>"An Lan Bridge (husband and wife bridge)" recommendation<br></STRONG> The front of the fish mouth is
+            across the bridge, also known as the couple bridge. During the Qing Jiaqing years, he's husband and wife
+            built the streets of the two sides. Now the bridge is quite romantic.</P>
+        <img src="img/fuqiqiao.jpg">
+        <p>
+            The 261 meter length of the bridge is built only by wood and chain, and the sides of the cable are draped
+            with red and red silk and satin, walking on, shaking, as if to walk with each other with their own half. The
+            two people who have witnessed the friendship with the surging river may have a deeper love at the moment
+            when they reach the other shore.</P>
+        <img src="img/fuqiqiao2.jpg">
+        <p> After the bridge, there is a more romantic concentric lock wall waiting for lovers to complete. The
+            everlasting pledge must be fermented among mountains and rivers to sublime it more indestructible.</P>
+        <hr>
+        <p>
+            The floating clouds are dyed yellow by the sun, and the birdsong is disturbed by the bell and chime. At this
+            time, along the concentric lock wall, I saw that the corners of the eaves of the two kings temple were
+            visible in the tall trees. The eaves, the birds and the setting sun formed a diagonal on the instant that I
+            pressed the shutter, which was the peak of my trip. After visiting the two kings temple, please follow the
+            East Song Mao road and return to the entrance of the scenic area.
+        </P>
+        <p>
+            The entrance to the scenic area, the two months' Munich beer festival has just begun. The carnival of
+            gourmet and beautiful wine, beauty and the feast of the song, please enjoy the pleasure here and enjoy the
+            wine and drink with the revelry.</P>
+        <hr>
+        <p>If you say there's a place in the world</p>
+        <p>The ability to turn the turbulent River into a spring water in a moment </p>
+        <p>Turning dry soil into fertile farmland</p>
+        <p>Turn the noisy city into a summer resort </p>
+        <p>Turn the sun into a clean wind</p>
+        <p>Turn the heart into a plume of smoke </p>
+        <p>It is impossible to make it possible</p>
+        <p>I will not yell once again that there is no such place.。
+        </p>
+        <p>Dujiang Dam！ It's my answer. Thank you for meeting me better than a dream, and blowing a cool breeze for my
+            next summer.</P>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

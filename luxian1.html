@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO-sharer—成都游记</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/luxianmode.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" href="Ehome.html" data-lan="1">En</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            登录
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">用户</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">志愿者</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">工作人员</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            注册
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register"
+                                   onclick="registername('yh')">用户</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">志愿者</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class="col-md-2"><a href="home.html">首页</a></li>
+
+                        <li class="col-md-2">
+                            <a href="luxian1.html">
+                                红军路线
+                            </a>
+                        </li>
+
+                        <li class="col-md-2 dropdown">
+                            <a href="luxian2.html">
+                                三国文化
+                            </a>
+                        </li>
+
+                        <li class="col-md-2 dropdown">
+                            <a href="luxian3.html">
+                                诗词之乡
+                            </a>
+                        </li>
+
+                        <li class="col-md-2 ">
+                            <a href="zutuanyouxue.html" class="dropdown-toggle">
+                                组团游学
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="dagonglvxing.html" class="dropdown-toggle">
+                                打工旅行
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="搜索">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">登录</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>用户名</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">登录</button>
+                        <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 登录模态框 -->
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="姓名">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="年龄">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    性别
+                                </option>
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="国籍">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="语言">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="联系方式">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="希望旅行给你带来什么"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | 搜索</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>搜索</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>相关路线</h2>
+                <div class="search-block" id="luxian">
+                    <div class="search-small-block">
+                        <a href="#">
+                            路线二：三国文化
+                        </a>
+                    </div>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>相关景点</h2>
+                <div class="search-block" id="jingdian">
+                    <div class="search-small-block">
+                        <a href="#">
+                            路线二：三国文化
+                        </a>
+                    </div>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>相关游记</h2>
+                <div class="search-block" id="youji">
+                    <div class="search-small-block">
+                        <a href="#">
+                            路线二：三国文化
+                        </a>
+                    </div>
+                    <div class="search-small-block">
+                        <a href="#">
+                            路线二：三国文化
+                        </a>
+                    </div>
+                    <div class="search-small-block">
+                        <a href="#">
+                            路线二：三国文化
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid blue_bg">
+    <div class="container">
+        <h1>路线一介绍：</h1>
+        <p class="introduction">长征精神、长征文化是中国共产党人革命风范的生动反映，四川是展现长征精神的主要舞台，中国工农红军描绘了长征途中最灿烂的辉煌篇章。因此，在四川省境内留下了许多红色记忆，从红军长征之路上的红军渡到实现中华民族伟大复兴的伟人邓小平的故居，无不彰显出中国共产党人的坚强斗争精神，让我们跟随红军的步伐，体会革命之地的红色味道。</p>
+
+        <h2>1、红军渡</h2>
+        <p><strong>简介：</strong>红军渡位于四川省苍溪县境内，是红四方面军长征出发地、强渡嘉陵江战役纪念地，新中国成立后，为缅怀红军将士的英勇业绩，纪念红军胜利渡江，苍溪人民将塔子山下的渡口命名为“红军渡”，属于全国百个经典红色旅游景点之一。这里依山傍水，地势险要，树木丛生，景色宜人，巍峨屹立的红军塑像如脱弦之箭，气势凌然，无不展现出红军战士的英勇无畏。</p>
+        <p><strong>相关文化故事：</strong>红军渡是红四方面军长征出发地、强渡嘉陵江纪念地，在这片土地上，红四方面军英勇斗争，所向披靡。1935年，中国工农红军第四方面军为配合中央红军北上抗日，奉命渡江西进，而国民党军阀纠集53个团的兵力，在长达200公里的江防线上重兵把守，企图凭借嘉陵江天堑，阻止我军西进，为粉碎敌人的阴谋，贯彻中央“渡江两进，北上抗日”的方针，红军以塔子山为渡口强渡嘉陵江，像敌人展开猛烈攻击，势如破竹，国民党惨淡经营的防线一时间瓦解，红军挥师北上，踏上新的征途。</p>
+        <p>红军渡此地也作为中国红军革命的历史圣地，此后红军西征，向四川甘肃边界发展，巩固和扩大川陕苏区，红色之火在大巴山熊熊燃烧，川陕苏维埃政权大旗迅速漫卷苍山溪水。</p>
+
+
+        <h2>2、川陕革命根据地</h2>
+        <p><strong>简介：</strong>川陕革命根据地位于川陕两省交界的秦岭与大巴山区，是中国工农红军第四方面军1932年战略转移到四川、陕西边界地区，在川陕边区党组织和广大劳动群众配合下建立的一块苏维埃区域，是中化苏维埃共和国的第二大区域。其中烈士墓园为缅怀在创建和保卫川陕苏区中牺牲的红军将士而修建，在此地人们对红军先烈的敬仰之情油然而生。</p>
+        <p><strong>相关文化故事：</strong>1932年10月，鄂豫皖革命根据地第四次反“围剿”失败，红四方面军主力西征，1933年2月相继在通江召开川陕省第一次党员代表大会、川陕省第一次工农兵代表大会，成立了中共川陕省委和川陕省苏维埃政府，标志着以通、南、巴为中心的川陕革命根据地正式诞生。1933年3月川陕苏区军民取得了著名的空山坝战役胜利，粉碎了蒋介石和四川军阀发动的“三路围攻”，使根据地和红军都得到了很大发展。1933年8月，川陕苏区军民取得了仪南、营、渠、宜达三次进攻战役的胜利，川陕苏区进入鼎盛时期。1933年10月川陕苏区军民粉碎了蒋介石和四川军阀发动的“六路围攻”，取得辉煌的战绩。1935年，长征途中的中央政治局及军委发出指示，命令红四方面军“于最近时期实行向嘉陵江以西进攻”，至此，红四方面军强渡嘉陵江，向川西转移，放弃了川陕革命根据地。</p>
+
+
+        <h2>3、剑门关抗战遗址</h2>
+        <p><strong>简介：</strong>红军血战剑门关遗址即指红星广场，位于四川省广安市剑阁县剑门关风景区内，由红军攻克剑门关纪念碑、红军攻克剑门关纪念馆、将帅雕塑和石刻标语等景点组成，是全国爱国主义教育基地和100个红色旅游景点景区之一。红军攻克剑门关纪念馆分为两部分，第一部分陈列展示有红军在剑门关进行的重大革命战斗及留下的革命文物；第二部分则采用国际先进的玻璃屏幕背投和投影仪多屏融合技术，通过多媒体生动地模拟出红军浴血剑门关的历史场景，有利于游客深入了解战争文化、红色文化，感受英勇红军战士前仆后继的历史壮举。        </p>
+        <p><strong>相关文化故事：</strong>1935年3月底，红四方面军强渡嘉陵江后，兵分三路，以疾风扫落叶之势，席卷沿江敌人。红军方面军指挥员王树声在仔细查看剑门关地形地势后，定下“避开正面，打敌侧后与奇兵突袭相结合”的作战方针。4月2日拂晓，红军从东、西、南三面包围剑门关，但遭到敌人的严重堵截。三路红军随即奉命行动，对敌各个集团工事实行逐点攻击，快速扫清了剑门关外围据点，迫使敌人缩小防御范围，逃上主峰阵地。2日11时许，王树声下达进攻主峰的命令。被誉为“夜袭常胜军”的第二营在迫击炮、机枪火力的掩护下，向主峰发起了强烈的攻势。第二营的勇士们沿着蜿蜒的山路，顶着枪林弹雨，艰难地接近敌人阵地。但川军依仗险要地势和精良武器，在红军仰攻道路上组成密集火力，拼命顽抗，前两次进攻都惨烈失败。关键时刻红军的炮兵发挥了重要作用。红军炮兵认真瞄准，一发发炮弹连续打中敌制高点上的集团工事，敌人枪声顿哑。红军乘隙迅速冲进敌人工事，与敌展开激烈的白刃格斗。红军战士浴血奋战，顽强拼搏，飞步冲上山顶，在主峰上插上军旗，红军成功攻克剑门关。</p>
+        <p>此壮举被红军攻克剑门关纪念碑座四周的浮雕生动逼真地记录了下来。八面浮雕下，分别刻有为创建剑阁苏区、牺牲疆场的红军英烈1200多人的名字。碑座四周嵌有红军强渡嘉陵江、浴血火烧寺、剑门女红军、血战剑门关、军民鱼水情、剑门关大捷、剑阁会议、苏维埃政权等八面汉白玉浮雕，完美再现了抗战时期红军的浴血抗争和英勇无畏。 </p>
+        <p>四川省剑阁县属于川陕革命老区，而剑门关历来为兵家必争之地，素有“打下剑门关，犹如得四川”之说。</p>
+
+
+        <h2>4、邓小平故里</h2>
+        <p><strong>简介：</strong>邓小平故里旅游区位于四川省广安市广安区协兴镇，占地3.19平方公里，是集缅怀纪念、爱国主义教育、古镇文化、社会主义新农村展示、休闲度假于一体的复合型旅游景区。主要景点包括邓小平故居、洗砚池、翰林院子、蚕房院子、北山小学堂、清水塘、神道碑、德政坊等近20处邓小平童年及青少年时期活动场所，及邓小平故居陈列馆、邓小平铜像广场、邓小平缅怀馆等纪念缅怀设施。2014年，邓小平亲属向邓小平故居陈列馆和邓小平缅怀馆捐赠了一批文物和遗物，共计441件，充分展示了邓小平一生的历史足迹。</p>
+        <p><strong>相关文化故事：</strong>邓小平故里完美再现了青少年时期邓小平的生活轨迹。邓小平故居是一座普通的川东农家三合院，被称为“邓家老院子”。1904年8月22日，邓小平同志诞生于此，并与家人在此生活了15年，直至1919年赴法勤工俭学。翰林院子陪邓小平度过10年启蒙读书时期，是邓小平成长发展的地方。邓家老井的清冽井水养育了一代伟人邓小平，直至他离开家乡。放牛坪是童年邓小平放牛、玩耍的地方，永久留下了邓小平矫健的身影和琅琅书声。洗砚池是邓小平儿时取水研墨习字的地方，承载了对于邓小平儿时刻苦学习的记忆。北山小学堂是邓小平接受初步新式教育的地方，邓小平在此接受了早期新思想，对青年邓小平决定赴法留学具有重要影响。</p>
+        <p>邓小平缅怀馆、邓小平故居陈列馆通过邓小平遗物、文物的陈列展示，再现了邓小平青年时期、中年时期、老年时期的生活状态，弥补了邓小平离开家乡后的历史记录空白，形成了邓小平同志一生的完整历史轨迹。邓小平缅怀馆通过陈列邓小平同志经典语录、手迹、部分亲笔批示、讲话提纲及评价等，分别向外界展示了邓小平同志的日常生活、业余爱好、家庭亲情、工作场景等，诠释了邓小平同志智慧非凡、朴实坦荡、心系人民、平易近人的品格风范。</p>
+        <p>邓小平铜像面前总是布满缅怀者献上的鲜花，上至走路蹒跚、需要搀扶上前献花的老人、下至环抱怀中、呀呀细语的小孩，无不真诚致谢、沉重纪念，这便是邓小平同志的人格魅力和历史贡献所带来的热烈反应。</p>
+
+        <h2>5、朱德故里</h2>
+        <p><strong>简介：</strong>朱德故里位于四川省南充市仪陇县马鞍镇琳琅村朱家大湾，以朱德故居、朱德诞生地、朱德同志故居纪念馆为主体，融合丁氏庄园、川北大木偶等人文资源，充分利用琳琅山、四方田等地理标志，融合德文化、红色文化、客家文化、农耕文化，实现自然景观与人文景观的相融、相通，是集“伟人瞻仰、旅游消费、度假休闲”为一体的全国红色旅游示范区。朱德故里的核心景区面积5.6平方公里，涉及5个村32个村民小组1605户5385人，属于原生态开放式景区，完整、真实地还原了朱德同志青少年时期的生活环境和生活情景，是全国12个重点红色旅游区、30条红色精品旅游线路之一，先后获得“全国爱国主义教育示范基地”、“全国廉政教育基地”、首批“景区带村”旅游扶贫示范景区等荣誉称号。</p>
+        <p><strong>相关文化故事：</strong>1886年，朱德诞生在四川省南充市仪陇县一个地主家的仓库里，亲生父母是普通的佃农，租用当地商贾丁氏的房屋居住。不久后，朱德过继给大伯夫妇抚养。养父母一家为了生计搬到隔壁村居住，这也是朱德青少年时期一直居住的地方。该房屋选址四面环山，面朝南方，视野开阔，周边连片小山环绕，绿绿葱葱，环境优美灵境，空气极好，是个不可多得的宝地。朱德家以租用丁氏地主土地耕种为主业，平常生活中通过制作贩卖豆腐补贴家用，朱德年幼时经常帮忙家务，省吃俭用，吃苦耐劳。童年时期的这些经历使年幼的朱德养成了朴实坦荡、坚韧不屈的伟人精神，对朱德的一生都产生了巨大的影响。小时候，母亲一边缝补，一边向朱德讲解礼义耻孝，对于塑造朱德高尚的人格品质具有重要作用。后朱德加入中国同盟会，1917年7月任滇军旅长，凭借卓越的军事才能奋身军界，名震川滇。在十月革命和五四运动的影响下，朱德逐渐接受马克思主义，远赴德国寻求革命真理，并加入了中国共产党。至此，朱德同志的一生开始与马克思主义、与中华人民共和国的未来紧密相连。
+        </p>
+        <p>度量大如海，意志坚如钢。他就像大海一样伟岸，他就像大海一样庄严，他就像大海一样宽广，他就像大海一样深厚。这便是对朱德同志崇高品质的真实写照。</p>
+
+        <h3>交通：<small>(设置旅游专线，山路较多，大巴车全程接送）</small></h3>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>剑门关——红军渡</td>
+                <td>（124公里，约1小时49分，汽车，兰海高速）</td>
+            </tr>
+            <tr>
+                <td>红军渡——川陕革命根据地</td>
+                <td>（123公里，约2小时45分，汽车，347国道）</td>
+            </tr>
+            <tr>
+                <td>川陕革命根据地——朱德故居</td>
+                <td>（76.2公里，约1小时8分钟，汽车，银昆高速）</td>
+            </tr>
+            <tr>
+                <td>朱德故居——邓小平故居</td>
+                <td>（133公里，约2小时，汽车，银昆高速）</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/homepage.js"></script>
+</body>
+</html>

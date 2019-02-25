@@ -1,0 +1,23 @@
+p{
+    text-indent: 2em;
+    margin: 1em auto;
+    text-align: justify;
+}
+h1{
+    font-size: 38px;
+    margin-top:1em;
+}
+h2{
+    font-size: 28px;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.container img{
+    width: 70%;
+    margin: 50px;
+}

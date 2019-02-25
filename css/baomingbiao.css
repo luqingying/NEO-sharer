@@ -1,0 +1,13 @@
+.form-group textarea{
+    position: relative;
+    left:15px;
+    width: 70%;
+}
+.form-group button{
+    position: relative;
+    left:15px;
+}
+.title{
+    top: 1em;
+    position: relative;
+}

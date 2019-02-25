@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/mode.css">
+    <title>Introduction of Sichuan scenic spots in Chengdu</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mode.css">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/search-modal.css">
-    <title>四川其他（除成都）景点</title>
+    <link rel="stylesheet" href="css/english.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
 </head>
 <body>
-
 <header>
     <div class="container-fluid header">
         <div class="row">
@@ -21,33 +26,33 @@
             <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
 
                 <ul class="nav-main ">
-                    <li class="nav-li"><a class="btn btn-lan" href="Ehome.html" data-lan="1">En</a></li>
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
                     <li class="nav-li dropdown">
                         <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
-                            登录
+                            login
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">用户</a>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
                             </li>
-                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">志愿者</a>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
                             </li>
                             <li><a href="#" data-toggle="modal" data-target="#login"
-                                   onclick="loginname('gzry')">工作人员</a></li>
+                                   onclick="loginname('gzry')">Personnel</a></li>
                         </ul>
+
                     </li>
                     <li class="nav-li dropdown">
                         <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
-                            注册
+                            register
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#" data-toggle="modal" data-target="#register"
-                                   onclick="registername('yh')">用户</a>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
                             </li>
                             <li>
-                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">志愿者</a>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
                             </li>
                         </ul>
                     </li>
@@ -75,41 +80,40 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="blue_nav">
                     <ul class="nav navbar-nav col-md-12 col-sm-12">
-                        <li class="col-md-2"><a href="#">首页</a></li>
+                        <li class=""><a href="Ehome.html">Home page</a></li>
 
-                        <li class="col-md-2">
+                        <li class=" dropdown">
                             <a href="#hongjunluxian">
-                                红军路线
+                                The Red Army line
                             </a>
                         </li>
 
-                        <li class="col-md-2 dropdown">
+                        <li class=" dropdown">
                             <a href="#sanguowenhua">
-                                三国文化
+                                The culture of the Three Kingdoms
                             </a>
                         </li>
 
-                        <li class="col-md-2 dropdown">
+                        <li class=" dropdown">
                             <a href="#shicizhixiang">
-                                诗词之乡
+                                The hometown of poetry
                             </a>
                         </li>
-
-                        <li class="col-md-2 ">
-                            <a href="zutuanyouxue.html" class="dropdown-toggle">
-                                组团游学
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
                             </a>
                         </li>
-                        <li class="col-md-2">
-                            <a href="dagonglvxing.html" class="dropdown-toggle">
-                                打工旅行
+                        <li class="">
+                            <a href="Edagonglvxing.htmls" class="dropdown-toggle">
+                                Work travel
                             </a>
                         </li>
                     </ul>
                 </div>
                 <form class="navbar-form navbar-right">
                     <div class="input-group">
-                        <input id="searchinput" type="text" class="form-control input_search" placeholder="搜索">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
                         <span class="input-group-btn">
                             <button id="search" class="btn btn-search" type="button" data-toggle="modal"
                                     data-target="#search-result">
@@ -131,29 +135,27 @@
                 </button>
             </div>
             <div class="modal-title">
-                <h1 class="text-center">登录</h1>
+                <h1 class="text-center">login</h1>
             </div>
             <div class="modal-body">
                 <form class="form-group" action="">
                     <div class="form-group">
-                        <label>用户名</label>
+                        <label>User name</label>
                         <input class="form-control" type="text" placeholder="">
                     </div>
                     <div class="form-group">
-                        <label>密码</label>
+                        <label>password</label>
                         <input class="form-control" type="password" placeholder="">
                     </div>
                     <div class="text-right">
-                        <button class="btn btn-primary" type="submit">登录</button>
-                        <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
-
-<!-- 登录模态框 -->
 
 <div id="register" class="modal fade">
     <div class="modal-dialog">
@@ -170,22 +172,21 @@
                 <form role="form">
                     <div class="form-group" id="name_div">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="name" placeholder="姓名">
+                            <input type="text" class="form-control" id="name" placeholder="name">
                         </div>
                     </div>
                     <!--第一行结束-->
 
                     <div class="form-group">
                         <div class="col-lg-6">
-                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="年龄">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
                         </div>
                         <div class="col-lg-6">
                             <select class="form-control">
                                 <option value='' disabled selected style='display:none;'>
-                                    性别
-                                </option>
-                                <option>男</option>
-                                <option>女</option>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
                             </select>
                         </div>
                     </div>
@@ -193,33 +194,33 @@
 
                     <div class="form-group">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="nation" placeholder="国籍">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
                         </div>
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="language" placeholder="语言">
+                            <input type="text" class="form-control" id="language" placeholder="language">
                         </div>
                     </div>
                     <!--第三行结束-->
 
                     <div class="form-group">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="tel" placeholder="联系方式">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
                         </div>
                         <div class="col-lg-6">
-                            <input type="email" class="form-control" id="email" placeholder="邮箱">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
                         </div>
                     </div>
                     <!--第四行结束-->
 
                     <div class="form-group">
                         <div class="col-lg-12">
-                            <textarea class="form-control" rows="4" placeholder="希望旅行给你带来什么"></textarea>
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
                         </div>
                     </div>
                     <!--第五行结束-->
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-default btn-lg">提交</button>
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
                     </div>
                 </form>
             </div>
@@ -228,7 +229,6 @@
 </div>
 <!-- 注册模态框 -->
 <!-- header end -->
-
 <div id="search-result" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -239,45 +239,23 @@
             </div>
             <div class="modal-body">
                 <div id="search-head">
-                    <label class="search-label">NEO-sharer | 搜索</label>
+                    <label class="search-label">NEO-sharer | Search</label>
                     <input type="text" id="searchinputmodal">
                     <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
-                        <span class="glyphicon glyphicon-search"></span><span>搜索</span>
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
                     </button>
                 </div>
-                <h2><span class="glyphicon glyphicon-tags"></span>相关路线</h2>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
                 <div class="search-block" id="luxian">
-                    <div class="search-small-block">
-                        <a href="#">
-                            路线二：三国文化
-                        </a>
-                    </div>
+
                 </div>
-                <h2><span class="glyphicon glyphicon-tags"></span>相关景点</h2>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
                 <div class="search-block" id="jingdian">
-                    <div class="search-small-block">
-                        <a href="#">
-                            路线二：三国文化
-                        </a>
-                    </div>
+
                 </div>
-                <h2><span class="glyphicon glyphicon-tags"></span>相关游记</h2>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
                 <div class="search-block" id="youji">
-                    <div class="search-small-block">
-                        <a href="#">
-                            路线二：三国文化
-                        </a>
-                    </div>
-                    <div class="search-small-block">
-                        <a href="#">
-                            路线二：三国文化
-                        </a>
-                    </div>
-                    <div class="search-small-block">
-                        <a href="#">
-                            路线二：三国文化
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -286,8 +264,8 @@
 
 <main>
     <div class="page-header">
-        <h1>四川其他
-            <small>四川景点介绍</small>
+        <h1>The rest of Sichuan
+            <small>The introduction of Sichuan scenic spots</small>
         </h1>
     </div>
 
@@ -295,20 +273,20 @@
         <div class="pictures-div">
             <img src="img/jiuzhaigou.jpg">
         </div>
-        <h2>九寨沟</h2>
-        <p>九寨沟国家级自然保护区位于四川省阿坝藏族羌族自治州南坪县境内，距离成都市400多公里，是一条纵深40余公里的山沟谷地，因周围有树正寨、荷叶寨、则查洼寨等九个藏族村寨而得名，总面积约620平方公里，大约有52％的面积被茂密的原始森林所覆盖。 九寨沟是中国第一个以保护自然风景为主要目的的自然保护区，同时，也是中国唯一拥有“世界自然遗产”和“世界生物圈保护区”两顶桂冠的圣地，因其独有的原始景观，丰富的动植物资源被誉为“人间仙境”。九寨沟为全国重点风景名胜区和全国文明风景旅游区示范点，并被列入世界遗产名录。</p>
+        <h2>Jiuzhaigou</h2>
+        <p>Jiuzhaigou National Nature Reserve is located in Nanping County, Aba Tibetan and Qiang Autonomous Prefecture of Sichuan province. It is more than 400 kilometers from Chengdu. It is a valley area of more than 40 kilometers deep. It is named for nine Tibetan villages, such as tree Zai Zhai, lotus leaf village and Chabu village, with a total surface of about 620 square kilometers, and about 52% faces. The product is covered by dense primeval forests. Jiuzhaigou is the first natural reserve to protect natural scenery as its main purpose. At the same time, it is the only place in China with the two crown of "World Natural Heritage" and "World Biosphere Reserve". Because of its unique original landscape, abundant animal and plant resources are known as "the world fairyland". Jiuzhaigou is the national key scenic spot and the national civilized scenic spot demonstration spot, and has been listed in the world heritage list.</p>
         <p class="lead">
-            英文名：Jiuzhaigou Valley Scenic and Historic Interest Are<br/>
-            建立时间：第四纪古冰川时期<br/>
-            地址：九寨沟县漳扎镇境内<br/>
-            类别：野生动物类型自然保护区<br/>
-            类别：风景名胜<br/>
-            票价：80-220元<br/>
-            开放时间：全天<br/>
-            气候类型：高原湿润气候<br/>
-            著名景点：翠湖、叠瀑、彩林、雪峰、藏情等<br/>
-            占地面积：64297公顷<br/>
-            景区级别：国家5A级景区<br/>
+            English Name:Jiuzhaigou Valley Scenic and Historic Interest Are<br/>
+            Establishment time: Quaternary paleo glacial period<br/>
+            Address: zhangzhan Town, Jiuzhaigou County<br/>
+            Category: wild animal type Nature Reserve<br/>
+            Category: scenic spots<br/>
+            Ticket price: 80-220 yuan<br/>
+            Open time: all day<br/>
+            Climate types: Plateau humid climate<br/>
+            Famous scenic spots: Cui Hu, cascading waterfalls, Choi Lam, snow peak, Tibet and so on.<br/>
+            Land area: 64297 hectare<br/>
+            Scenic Area: National 5A scenic spot<br/>
         </p>
     </div><!--九寨沟-->
 
@@ -316,14 +294,14 @@
         <div class="pictures-div">
             <img src="img/emeishan.jpg">
         </div>
-        <h2>峨眉山</h2>
-        <p>峨眉山，世界文化与自然遗产，全国重点文物保护单位，国家重点风景名胜区，国家AAAAA级旅游景区。位于四川省乐山市峨眉山市境内，景区面积154平方公里，最高峰万佛顶海拔3099米。地势陡峭，风景秀丽，有“秀甲天下”之美誉，有陈运和散文"登峨眉就像登诗"的夸奖。气候多样，植被丰富，共有3000多种植物，其中包括世界上稀有的树种。山路沿途有较多猴群，常结队向游人讨食，为峨眉一大特色。峨眉山是中国四大佛教名山之一，作为普贤菩萨的道场，主要崇奉普贤大士，有寺庙约26座，重要的有八大寺庙，佛事频繁。1996年12月6日，峨眉山—乐山大佛作为世界文化与自然双重遗产被联合国教科文组织列入世界遗产名录。</p>
+        <h2>Mount Emei</h2>
+        <p>Mount Emei, the world cultural and natural heritage, the national key cultural relic protection unit, the national key scenic spot, the national AAAAA level scenic spot. Located in the city of Mount Emei, Leshan, Sichuan, the scenic area is 154 square kilometers, and the highest peak is at 3099 meters above sea level. With its steep terrain and beautiful scenery, it has the reputation of "showing the best in the world". The climate is diverse and the vegetation is rich. There are 3000 plants, including rare species in the world. Mountain road along the way there are more monkeys, often convoy to the tourists for food, for Emei a major feature. Mount Emei is one of the four famous Buddhist mountains in China. As the Dao field of the Pu Xian Bodhisattva, the main worship of the mongsts, there are about 26 temples, the important eight temples, and the frequent Buddhist events. On 1996 12 6, the Mount Emei Leshan Giant Buddha is listed as the world heritage list by UNESCO as the world's dual heritage of culture and nature. </p>
         <p class="lead">
-            开放时间：07:00-18:00<br/>
-            票价：110-185元<br/>
-            类别：旅游景区<br/>
-            占地面积：154平方公里<br/>
-            景区级别：国家5A级景区<br/>
+            Open time: 07:00-18:00<br/>
+            Ticket price: 110-185 yuan <br/>
+            Category: tourist attractions <br/>
+            Land area: 154 square kilometer <br/>
+            Scenic area level: National 5A level scenic spot <br/>
         </p>
     </div><!--峨眉山-->
 
@@ -331,23 +309,26 @@
         <div class="pictures-div">
             <img src="img/dujiangyan.jpg">
         </div>
-        <h2>都江堰</h2>
-        <p>都江堰是世界文化遗产（2000年被联合国教科文组织列入“世界文化遗产”名录），世界自然遗产（四川大熊猫栖息地），全国重点文物保护单位，国家级风景名胜区，国家AAAAA级旅游景区。都江堰位于四川省成都市都江堰市城西，坐落在成都平原西部的岷江上，始建于秦昭王末年(约公元前256～前251)，是蜀郡太守李冰父子在前人鳖灵开凿的基础上组织修建的大型水利工程，由分水鱼嘴、飞沙堰、宝瓶口等部分组成，两千多年来一直发挥着防洪灌溉的作用，使成都平原成为水旱从人、沃野千里的"天府之国"，至今灌区已达30余县市、面积近千万亩，是全世界迄今为止，年代最久、唯一留存、仍在一直使用，以无坝引水为特征的宏大水利工程，凝聚着中国古代汉族劳动人民勤劳、勇敢、智慧的结晶。都江堰风景区主要有伏龙观、二王庙、安澜索桥、玉垒关、离堆公园、玉垒山公园、玉女峰、灵岩寺、普照寺、翠月湖、都江堰水利工程等。</p>
+        <h2>Dujiang Dam</h2>
+        <p>Dujiangyan is a world cultural heritage (included in the list of "world cultural heritage" by UNESCO in 2000), the world natural heritage (Sichuan giant panda habitat), the national key cultural relic protection unit, national scenic spot and national AAAAA tourist attraction. Dujiangyan, located in the west of Dujiangyan City, Chengdu, Sichuan Province, is located on the Minjiang River in the western part of the Chengdu plain. It was built in the last year of the Qin Zhao Wang (about 256 BC to 251 BC). It is a large water conservancy project built on the foundation of Li Bing and his son of Shu County, which is built on the basis of the predecessors of Bie Ling, which is composed of water fish mouth, flying sand weir, and the mouth of the bottle. For more than two thousand years, it has been playing the role of flood control and irrigation, making the Chengdu plain becoming a "land of abundance" from people and thousands of miles and droughts. Up to now, the irrigation area has reached more than 30 counties and cities, with an area of nearly ten million mu. It is the oldest and only retained in the world so far, and is still being used and characterized by no dam diversion. Cheng embodies the crystallization of diligence, courage and wisdom of the Han people in ancient China. The Dujiangyan scenic area mainly includes the view of volon, the second Wang Temple, the mount Lan Bridge, the jade base, the park, the jade base mountain park, the jade woman peak, the soul rock temple, the pzhao temple, the Cui Moon Lake and the Dujiangyan water conservancy project. </p>
         <p class="lead">
-            英文名：Dujiangyan irrigation system<br/>
-            地址：四川省成都市都江堰市(原灌县)城西<br/>
-            景区等级：AAAAA级<br/>
-            开放时间：08:00-18:00<br/>
-            票价：90元<br/>
+            English name：Dujiangyan irrigation system<br/>
+            Address: <br/>, west of Dujiangyan, Chengdu City, Sichuan province.
+            Scenic grade: AAAAA class <br/>
+            Open time: 08:00-18:00<br/>
+            Ticket price: 90 yuan <br/>
         </p>
     </div><!--都江堰-->
 </main>
+
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
 <script src="js/search.js"></script>
 </body>
 </html>

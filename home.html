@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEO-sharer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" href="Ehome.html" data-lan="1">En</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            登录
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">用户</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">志愿者</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">工作人员</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            注册
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register"
+                                   onclick="registername('yh')">用户</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">志愿者</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class="col-md-2"><a href="home.html">首页</a></li>
+
+                        <li class="col-md-2">
+                            <a href="#hongjunluxian">
+                                红军路线
+                            </a>
+                        </li>
+
+                        <li class="col-md-2 dropdown">
+                            <a href="#sanguowenhua">
+                                三国文化
+                            </a>
+                        </li>
+
+                        <li class="col-md-2 dropdown">
+                            <a href="#shicizhixiang">
+                                诗词之乡
+                            </a>
+                        </li>
+
+                        <li class="col-md-2 ">
+                            <a href="zutuanyouxue.html" class="dropdown-toggle">
+                                组团游学
+                            </a>
+                        </li>
+                        <li class="col-md-2">
+                            <a href="dagonglvxing.html" class="dropdown-toggle">
+                                打工旅行
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="搜索">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">登录</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>用户名</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">登录</button>
+                        <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 登录模态框 -->
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="姓名">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="年龄">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    性别
+                                </option>
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="国籍">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="语言">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="联系方式">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="希望旅行给你带来什么"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div id="search-head">
+                                <label class="search-label">NEO-sharer | 搜索</label>
+                                <input type="text" id="searchinputmodal">
+                                <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                                    <span class="glyphicon glyphicon-search"></span><span>搜索</span>
+                                </button>
+                            </div>
+                        <h2><span class="glyphicon glyphicon-tags"></span>相关路线</h2>
+                        <div class="search-block" id="luxian">
+                        </div>
+                        <h2><span class="glyphicon glyphicon-tags"></span>相关景点</h2>
+                        <div class="search-block" id="jingdian">
+                        </div>
+                        <h2><span class="glyphicon glyphicon-tags"></span>相关游记</h2>
+                        <div class="search-block" id="youji">
+
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+    <!-- 搜索模态框 -->
+
+    <!-- banner start -->
+    <section>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/banner-大唐芙蓉园.jpg" alt="banner">
+                    <div class="carousel-caption">
+                        <h2>People don't take trips,trips take people</h2>
+                        <h1>商业传播文化，旅行改变生活</h1>
+                        <p>大唐芙蓉园</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/banner-秦岭.jpg" alt="banner">
+                    <div class="carousel-caption">
+                        <h2>People don't take trips,trips take people</h2>
+                        <h1>商业传播文化，旅行改变生活</h1>
+                        <p>秦岭</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- banner end -->
+
+
+    <div class="container-fluid blue_bg" id="hongjunluxian">
+        <div class="blue_title text-center">
+            <span>红军路线</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/红军渡.jpg" alt="">
+                            <p>红军渡-西武当山</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>万里长征红军渡，千秋大业斗争来</p>
+                            <a class="btn btn_detail pull-right" href="luxian1.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/川陕革命根据地.jpg" alt="">
+                            <p>川陕革命根据地</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>革命之战艰辛万苦，人民烈士永垂不朽</p>
+                            <a class="btn btn_detail pull-right" href="luxian1.html"">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/剑门关.jpg" alt="">
+                            <p>剑门关抗战遗址</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>各路军阀如山崩，红军攻破剑门关</p>
+                            <a class="btn btn_detail pull-right"href="luxian1.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/朱德.jpg" alt="">
+                            <p>朱德故居</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>三军统帅元元戎印，四海军威世界奇</p>
+                            <a class="btn btn_detail pull-right" href="luxian1.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/邓小平.jpg" alt="">
+                            <p>邓小平故居</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>三百万人歌舞乐，红七军路小康月</p>
+                            <a class="btn btn_detail pull-right" href="luxian1.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-8 col-md-offset-5 col-xs-offset-3">
+                    <a class="btn btn_more" href="luxian1.html">更多行程</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- 红军路线 -->
+
+    <div class="container-fluid blue_point" id="sanguowenhua">
+        <div class="blue_title text-center">
+            <span>三国文化</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/武侯祠(2).jpg" alt="">
+                            <p>三国圣地：武侯祠</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>功盖分三国，名成八阵图</p>
+                            <a class="btn btn_detail pull-right" href="luxian2.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/剑门关1.jpg" alt="">
+                            <p>蜀之门户：剑门关</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>剑阁峥嵘而崔嵬，一夫当关，万夫莫开</p>
+                            <a class="btn btn_detail pull-right" href="luxian2.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/七曲大庙2.jpg" alt="">
+                            <p>东依梓林，西枕潼水：七曲大庙</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>七曲山上古柏翠，壮观大庙独占魁</p>
+                            <a class="btn btn_detail pull-right" href="luxian2.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-8 col-md-offset-5 col-xs-offset-3">
+                    <a class="btn btn_more" href="luxian2.html">更多行程</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- 三国文化 -->
+    <div class="container-fluid blue_bg" id="shicizhixiang">
+        <div class="blue_title text-center">
+            <span>诗词之乡</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/杜甫草堂1.png" alt="">
+                            <p>诗圣故居：杜甫草堂</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>浣花溪旁黄鹂鸣，草堂之上墨香扬</p>
+                            <a class="btn btn_detail pull-right" href="luxian3.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/三苏祠.jpg" alt="">
+                            <p>大雅之堂：三苏祠</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>一门父子三词客;千古文章四大家</p>
+                            <a class="btn btn_detail pull-right" href="luxian3.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/太白碑林.jpg" alt="">
+                            <p>诗仙故里：太白碑林</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>流连忘返，诗魂永存</p>
+                            <a class="btn btn_detail pull-right" href="luxian3.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-8 col-md-offset-5 col-xs-offset-3">
+                    <a class="btn btn_more" href="luxian3.html">更多行程</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- 诗词之乡 -->
+
+    <div class="container-fluid blue_point">
+        <div class="blue_title text-center">
+            <span>目的地</span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <a href="chengdu.html#xiongmaojidi">
+                        <div class="blue_img_4">
+                            <img src="img/xiongmaojidi.jpg" alt="">
+                            <div class="blue_img_4_title">熊猫基地</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="chengdu.html#wuhouci">
+                        <div class="blue_img_4">
+                            <img src="img/武侯祠.jpg" alt="">
+                            <div class="blue_img_4_title">武侯祠</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="sichuan.html#jiuzhaigou">
+                        <div class="blue_img_4">
+                            <img src="img/九寨沟.jpg" alt="">
+                            <div class="blue_img_4_title">九寨沟</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="xian.html#bingmayong">
+                        <div class="blue_img_4">
+                            <img src="img/兵马俑.jpg" alt="">
+                            <div class="blue_img_4_title">兵马俑</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="xian.html#furongyuan">
+                        <div class="blue_img_4">
+                            <img src="img/大唐芙蓉园.jpg" alt="">
+                            <div class="blue_img_4_title">大唐芙蓉园</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="sichuan.html#emeishan">
+                        <div class="blue_img_4">
+                            <img src="img/峨眉山.jpg" alt="">
+                            <div class="blue_img_4_title">峨眉山</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="chengdu.html#dufucaotang">
+                        <div class="blue_img_4">
+                            <img src="img/杜甫草堂.jpg" alt="">
+                            <div class="blue_img_4_title">杜甫草堂</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="xian.html#qinling">
+                        <div class="blue_img_4">
+                            <img src="img/秦岭.jpg" alt="">
+                            <div class="blue_img_4_title">秦岭</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-6 col-md-offset-5 col-xs-offset-3">
+                    <a class="btn btn_more" href="coming_soon.html">更多景点</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid blue_bg">
+        <div class="blue_title text-center">
+            <span>游记分享</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/游记-成都巷子.jpeg" alt="">
+                            <p>成都｜藏在巷子里的美味</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>成都的街头，除了熙熙攘攘的人群，还有必不可少的小吃。著名的小吃街，是可以感受成都独有的味道的地点</p>
+                            <a class="btn btn_detail pull-right" href="chengduyouji.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/游记-西安.jpeg" alt="">
+                            <p>600年的城墙，1400年的银杏树，古都西安</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>盛世汉唐的发源地、丝绸之路的起点、十三朝的古都、这里是西安。若有机会时光穿越，我想我只会选择这里！</p>
+                            <a class="btn btn_detail pull-right" href="xianyouji.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_img_3">
+                        <div class="blue_img_3_img">
+                            <img src="img/游记-都江堰.jpeg" alt="">
+                            <p>拜水都江堰，问道青城山</p>
+                        </div>
+                        <div class="blue_img_3_text">
+                            <p>
+                                两千多年前由秦国蜀郡太守李冰修建的都江堰水利工程，是全世界年代最久、唯一留存、以无坝引水为特征的水利工程，也是目前中国保存最完整的古代水利工程，工程位于都江堰市城西的岷江干流上。</p>
+                            <a class="btn btn_detail pull-right" href="qingchengshanyouji.html">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-8 col-md-offset-5 col-xs-offset-3">
+                    <a class="btn btn_more" href="coming_soon.html">更多行程</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid container" id="blue_message">
+        <div class="blue_title text-center">
+            <span>留言板</span>
+        </div>
+        <form role="form" class="col-md-12  col-xs-12">
+            <div class="form-group" id="message">
+                <textarea class="form-control" rows="5" placeholder="添加留言"></textarea>
+                <!--            <button type="button" class="btn" id="cancel">取消</button>-->
+                <button type="button" class="sub btn btn-success">提交</button>
+            </div>
+        </form>
+        <div id="comment" class="col-md-12  col-xs-12">
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object col-md-2" src="img/head.jpeg" alt="...">
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading">游客</h5>
+                    <p class="message_content">Hello.</p>
+                    <p class="message_time">1楼 2018/3/19 下午12:49:12 发表</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-default btn-block">查看更多</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="container-fluid blue_bg blue_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_footer_title">Neo-Sharer</div>
+                    <div class="row blue_footer_list">
+                        <ul class="col-md-4 col-xs-4">
+                            <li><a href="#">目的地</a></li>
+                            <li><a href="#">我们的旅程</a></li>
+                            <li><a href="#">竞选酒店</a></li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                        <ul class="col-md-4 col-xs-4">
+                            <li><a href="#">客人评价</a></li>
+                            <li><a href="#">宣传手册</a></li>
+                            <li><a href="#">优惠特选</a></li>
+                            <li><a href="#">合作伙伴</a></li>
+                        </ul>
+                        <ul class="col-md-4 col-xs-4">
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">条款条件</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="blue_footer_title">订阅</div>
+                    <div class="col-md-8 col-xs-12 blue_footer_take">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="填写邮箱地址">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">发送</button>
+                        </span>
+                        </div>
+                        <p>发送邮箱订阅我们，我们会根据您的喜好来进行定制旅程</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="blue_copy">
+        <div class="container">© 2018 NEO-SHARER.</div>
+    </section>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/homepage.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

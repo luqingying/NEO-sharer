@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEO-sharer—Route 2</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/luxianmode.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/english.css">
+    <link rel="stylesheet" href="css/search-modal.css">
+    <style type="text/css">
+        #search-head{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
+
+<header>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-md-2 col-xs-4">
+                <!--<a class="logo" href="javascript:;"><img src="img/logo.png" alt=""></a>-->
+            </div>
+            <div class="col-md-8 col-xs-8 col-md-offset-2 text-right">
+
+                <ul class="nav-main ">
+                    <li class="nav-li"><a class="btn btn-lan" data-lan="1" href="home.html">Cn</a></li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            login
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('yh')">Subscriber</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login" onclick="loginname('zyz')">Volunteer</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target="#login"
+                                   onclick="loginname('gzry')">Personnel</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-li dropdown">
+                        <a href="#" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                            register
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('yh')">Subscriber</a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#register" onclick="registername('zyz')">Volunteer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<a href="javascript:;" class="btn btn-custom" data-toggle="modal" data-target="#testModal">一键定制</a>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="blue_nav">
+                    <ul class="nav navbar-nav col-md-12 col-sm-12">
+                        <li class=""><a href="Ehome.html">Home page</a></li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian1.html">
+                                The Red Army line
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian2.html">
+                                The culture of the Three Kingdoms
+                            </a>
+                        </li>
+
+                        <li class=" dropdown">
+                            <a href="E-luxian3.html">
+                                The hometown of poetry
+                            </a>
+                        </li>
+
+                        <li class=" ">
+                            <a href="Ezutuanyouxue.html" class="dropdown-toggle">
+                                Group tour
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
+                                Work travel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input id="searchinput" type="text" class="form-control input_search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button id="search" class="btn btn-search" type="button" data-toggle="modal"
+                                    data-target="#search-result">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- nav end -->
+</header>
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">login</h1>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" action="">
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">login</button>
+                        <button class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">注册</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group" id="name_div">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="number" min="1" max="120" class="form-control  " id="age" placeholder="age">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-control">
+                                <option value='' disabled selected style='display:none;'>
+                                    gender</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--第二行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="nation" placeholder="nationality">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="language" placeholder="language">
+                        </div>
+                    </div>
+                    <!--第三行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="tel" placeholder="Contact information">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="email" placeholder="mailbox">
+                        </div>
+                    </div>
+                    <!--第四行结束-->
+
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <textarea class="form-control" rows="4" placeholder="What do you want travel to bring to you"></textarea>
+                        </div>
+                    </div>
+                    <!--第五行结束-->
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default btn-lg">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 注册模态框 -->
+<!-- header end -->
+<div id="search-result" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="search-head">
+                    <label class="search-label">NEO-sharer | Search</label>
+                    <input type="text" id="searchinputmodal">
+                    <button type="button" class="btn btn-primary btn-lg" id="searchmodal">
+                        <span class="glyphicon glyphicon-search"></span><span>Search</span>
+                    </button>
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related routes</h2>
+                <div class="search-block" id="luxian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related attractions</h2>
+                <div class="search-block" id="jingdian">
+
+                </div>
+                <h2><span class="glyphicon glyphicon-tags"></span>Related travel articles</h2>
+                <div class="search-block" id="youji">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid blue_bg">
+    <div class="container">
+        <h1>Route 2: Three Kingdoms Culture</h1>
+            <p class="introduction">The "Three Kingdoms era" has two definitions. The narrow Three Kingdoms period was from AD 220 to AD 280. The Three Kingdoms era in the broad sense can be understood as the era of the establishment of the Jin Dynasty unified world from the struggle between the Liu Shi Group, the Cao Group, the Sun Group, and its associated Han Warlords after the uprising of the Yellow Turban Army in the late Eastern Han Dynasty to Sima Yan. The three countries in the broad sense are the main bodies of research in the culture of the Three Kingdoms.</p>
+            <p class="introduction">In this route, around the Three Kingdoms Culture Line, Chengdu Wuhou Temple now covers an area of 150,000 square meters. It consists of three parts: the Three Kingdoms Historical Area (cultural area), the Western Area (the Three Kingdoms Cultural Experience Area) and the Jinli Folk District (Jinli). , enjoy the "holy land of the Three Kingdoms" in the world. Jianmenguan was the result of the Tang Dynasty poet Li Bai's "Difficult Road" in which "The Clan and the Clan of the Clan are the same, and they are the ones who will be the ones who will open the door." It is a combination of the Shuo Culture, the Three Kingdoms Culture, the War Culture, and the Red Culture. The Qiqu Temple is 49 kilometers north of Mianyang City. It was named after the “East is tied to Yulin, and the west is pillowed with water”. As early as the 22nd year of Qin Zhaowang (AD 285), it was set as a county seat. In the city. </p>
+
+
+
+        <h2>1.Wuhou Temple(Han Zhao Temple)</h2>
+        <p><strong>Introduction:</strong>National key cultural relics protection units, national AAAA-grade tourist attractions, national first-class museums.</p>
+        <p>Wuhou Temple is located in Wuhou District, Chengdu City, Sichuan Province. When it was first built in 223 when Hui Bei was built, it was the only monk and ancestral temple in China and the most prestigious heroes of the Zhuge Liang, Liu Bei and Hao Han heroes. It is also a national influence. The largest museum of the Three Kingdoms Relics. In 1961, the State Council announced the first batch of national key cultural relics protection units. In 2008, it was selected as the first batch of national first-class museums.</p>
+        <p><strong>Related cultural story:</strong>Wuhouluo is a memorial hall for Zhuge Liang, the prime minister of the Sui and Han dynasties during the Three Kingdoms Period of China. He was named after Zhu Geliang’s death as Wu Xianghou.</p>
+        <p>In August, 3434, Zhu Geliang became ill due to overwork. He died of illness at Wuzhangyuan, the front line of the Northern Expedition, and was 54 years old. Zhuge Liang was an auspicious prime minister who was once called “Wuxiang Hou” before his death. After his death, he was later chastised by the monk and dynasty Liu Chan as “Zhongwu Hou”. Therefore, the temple was historically known as “Wuhou Temple”. The earliest Wuhou Temple in the country was in Ganxian County (Xian County) in Hanzhong, Shaanxi Province, but the most influential one is Wuhou Temple in Chengdu.</p>
+        <p>According to the records of the "Three Kingdoms", after Liu Bei died in Bai Di City in 223 CE, the halberd was transported back to Chengdu and was buried there. His name was Hui Ling. According to the Chinese system, there must be a temple in the tomb, so at the same time, there will be the birth of Han Zhaolie Temple. During the period of the Southern and Northern Dynasties, Wuhou Temple in Chengdu merged with Huiling and Han Zhaoliem.</p>
+
+
+
+
+        <h2>2.Jianmenguan</h2>
+        <p><strong>Introduction:</strong>Jianmenguan Scenic Area is a national AAAAA-class scenic spot, a national-level scenic spot, a national key cultural relics protection unit, a national forest park, a national natural and cultural double heritage, and one of the 100 red classic tourist attractions in China.</p>
+        <p>The Jianmenguan Scenic Area consists of Jianmenguan and Cuiyun Gallery, two adjacent scenic spots. The total planning area is 84 square kilometers, the core area is 6 square kilometers, and there are more than 300 viewing spots (districts), which is an important part of the Sichuan Jiuzhaii Ring Road. The supporting center of the node and the cultural tourism route of the Three Kingdoms.</p>
+        <p><strong>Related cultural story:</strong>The "Yizhou Tujing" cloud: Xiaojianshan intercepts the wild sky, Benfeng fell to the ground, Han Chu Han Han, Ye Yong Qin Yong. Although the Great Sword is naturally in danger, there is a stumbling block that can be held between Chongzhen and Chongzhen. The small sword is chiseled with stone beams, flying into the road, towering can not be overtaken, Li Bai, the cloud is the first time when the off Wan Fu Mo also open. Although Liu Zen and Xiao Ji Zhi, what are their advantages?</p>
+        <p>During the Three Kingdoms period, the prime minister Zhuge Liang led the army to cut Wei, passing through the Dajian Mountain, seeing the majestic peaks, and the steep mountains, the sergeants chiseled the rocks, set up the flying beams, and took the plank road. Zhuge Liang Liu Shaoshan, the Northern Expedition Cao Wei, had been in the grain, garrison, training; also in the Dajianshan between the cliffs of the canyon stone masonry for the door, build closed, send soldiers to guard. In 263 AD, Wei Junzhen’s general West will lead 100,000 elite soldiers to advance into Hanzhong, almost encroaching on Jianmenguan to capture the country of Shu. Jiang Jun’s general Jiang Wei’s 30,000 troops will retreat and shut the sword and shut off the Zhong Wan’s 100,000 troops in Yujian. Outside the door.</p>
+
+        <h2>3.the temple of Qiqiu Mountain.</h2>
+        <p><strong>Introduction:</strong>Out of 49 kilometers north of Mianyang City, it is named after “East is tied up with Yulin, and west is nestled with water”. As early as the 22nd year of Qin Zhaowang (AD 285), it was located in the city of Yucheng County. However, what really made the place famous for playing loudly abroad was a temple 9 kilometers north of the city: the temple of Qiqiu Mountain.</p>
+        <p><strong>Related cultural story:</strong>This temple, which was built in the Jin Dynasty, has been preserved in a better structure in the northern part of Sichuan since it was built and expanded over the Tang, Song, Yuan, Ming and Qing dynasties. It is the birthplace of the Wenchang culture in China and its Value has the "sole" concept.</p>
+        <p>The famous Cui Yun Gallery Cooper. When the three kingdoms were said, Zhang Fei led troops to this, because the hot weather was difficult, and the soldiers were planted to shade trees. It is said that a miracle appeared, actually "planting trees in the morning, shading in the afternoon." The local people called it "Zhang Feibai." In the Ming Dynasty, the state of Jianzhou mobilized the people to plant hundreds of thousands of cypress trees on the ancient road, and then artificially created this green cloud corridor. The ancient cypress on the green corridor was a living historical relic, a rare natural wonder.</p>
+
+
+
+        <h3>traffic：</h3>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>Chengdu East (Wuhou Temple) to Guangyuan (Jianmen Pass) Train</td>
+            </tr>
+            <tr>
+                <td>Guangyuan to Mianyang (Seven Songs Temple) Train</td>
+            </tr>
+            <tr>
+                <td>Mianyang to Chengdu East Train</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/Ehome.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
