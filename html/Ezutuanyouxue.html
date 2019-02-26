@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NEO-sharer—Route 2</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/luxianmode.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/english.css">
-    <link rel="stylesheet" href="css/search-modal.css">
+    <title>NEO-sharer—组团游学</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/baomingbiao.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/search-modal.css">
+    <link rel="stylesheet" href="../css/english.css">
     <style type="text/css">
         #search-head{
             width: 700px;
@@ -266,62 +265,133 @@
     </div>
 </div>
 
-
 <div class="container-fluid blue_bg">
+    <div class="blue_title text-center">
+        <span class="title">Group Tour Form</span>
+    </div>
     <div class="container">
-        <h1>Route 2: Three Kingdoms Culture</h1>
-            <p class="introduction">The "Three Kingdoms era" has two definitions. The narrow Three Kingdoms period was from AD 220 to AD 280. The Three Kingdoms era in the broad sense can be understood as the era of the establishment of the Jin Dynasty unified world from the struggle between the Liu Shi Group, the Cao Group, the Sun Group, and its associated Han Warlords after the uprising of the Yellow Turban Army in the late Eastern Han Dynasty to Sima Yan. The three countries in the broad sense are the main bodies of research in the culture of the Three Kingdoms.</p>
-            <p class="introduction">In this route, around the Three Kingdoms Culture Line, Chengdu Wuhou Temple now covers an area of 150,000 square meters. It consists of three parts: the Three Kingdoms Historical Area (cultural area), the Western Area (the Three Kingdoms Cultural Experience Area) and the Jinli Folk District (Jinli). , enjoy the "holy land of the Three Kingdoms" in the world. Jianmenguan was the result of the Tang Dynasty poet Li Bai's "Difficult Road" in which "The Clan and the Clan of the Clan are the same, and they are the ones who will be the ones who will open the door." It is a combination of the Shuo Culture, the Three Kingdoms Culture, the War Culture, and the Red Culture. The Qiqu Temple is 49 kilometers north of Mianyang City. It was named after the “East is tied to Yulin, and the west is pillowed with water”. As early as the 22nd year of Qin Zhaowang (AD 285), it was set as a county seat. In the city. </p>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="name-input" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="name-input" placeholder="Please enter your name">
+                </div>
+                <!--                </div>
+                                <div class="form-group">-->
+                <label for="sex" class="col-sm-2 control-label">Gender</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="sex">
+                        <option>Man</option>
+                        <option>Woman</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country" class="col-sm-2 control-label">Nationality</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="country" placeholder="Please enter your nationality">
+                </div>
+                <!--                </div>
+                                <div class="form-group">-->
+                <label for="language-input" class="col-sm-2 control-label">Language</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="language-input"
+                           placeholder="Please enter your language">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="partner-number" class="col-sm-2 control-label">Expected team size</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="partner-number" placeholder="Please enter the number of team expectations">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telphone-num" class="col-sm-2 control-label">Telephone</label>
+                <div class="col-sm-3">
+                    <input type="tel" class="form-control" id="telphone-num" placeholder="Please enter your telephone">
+                </div>
+                <!--              </div>
+                              <div class="form-group">-->
+                <label for="e_mail" class="col-sm-2 control-label">Mailbox</label>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" id="e_mail" placeholder="please enter your email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-2">
+                    <input type="tel" class="form-control" placeholder="Province">
+                </div>
+                <div class="col-sm-2">
+                    <input type="tel" class="form-control" placeholder="City">
+                </div>
+                <div class="col-sm-2">
+                    <input type="tel" class="form-control" placeholder="County">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sex" class="col-sm-2 control-label">Tourist choice</label>
+                <div class="col-sm-3" id="travel-place">
+                    <select class="col-sm-3 form-control sangeluxian">
+                        <option class="hongjun">Red Army Route</option>
+                        <option class="sanguo">Three cultures</option>
+                        <option class="shici">Land of poetry</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class=" form-control" id="红军路线">
+                        <option>Sewudang Mountain</option>
+                        <option>Sichuan and Shaanxi Revolutionary Base</option>
+                        <option>Jianmenguan Rebellion Site</option>
+                        <option>Zhu De's House</option>
+                        <option>Former Residence of Deng Xiaoping</option>
+                    </select>
+
+                    <select class="form-control" id="三国文化">
+                        <option>Wu Houyi</option>
+                        <option>Jianmenguan</option>
+                        <option>Seven Temples</option>
+                    </select>
+
+                    <select class=" form-control" id="诗词之乡">
+                        <option>Du Fu Thatched Cottage</option>
+                        <option>Sansu</option>
+                        <option>Taibai Bailinlin</option>
+                    </select>
+                </div>
 
 
-
-        <h2>1.Wuhou Temple(Han Zhao Temple)</h2>
-        <p><strong>Introduction:</strong>National key cultural relics protection units, national AAAA-grade tourist attractions, national first-class museums.</p>
-        <p>Wuhou Temple is located in Wuhou District, Chengdu City, Sichuan Province. When it was first built in 223 when Hui Bei was built, it was the only monk and ancestral temple in China and the most prestigious heroes of the Zhuge Liang, Liu Bei and Hao Han heroes. It is also a national influence. The largest museum of the Three Kingdoms Relics. In 1961, the State Council announced the first batch of national key cultural relics protection units. In 2008, it was selected as the first batch of national first-class museums.</p>
-        <p><strong>Related cultural story:</strong>Wuhouluo is a memorial hall for Zhuge Liang, the prime minister of the Sui and Han dynasties during the Three Kingdoms Period of China. He was named after Zhu Geliang’s death as Wu Xianghou.</p>
-        <p>In August, 3434, Zhu Geliang became ill due to overwork. He died of illness at Wuzhangyuan, the front line of the Northern Expedition, and was 54 years old. Zhuge Liang was an auspicious prime minister who was once called “Wuxiang Hou” before his death. After his death, he was later chastised by the monk and dynasty Liu Chan as “Zhongwu Hou”. Therefore, the temple was historically known as “Wuhou Temple”. The earliest Wuhou Temple in the country was in Ganxian County (Xian County) in Hanzhong, Shaanxi Province, but the most influential one is Wuhou Temple in Chengdu.</p>
-        <p>According to the records of the "Three Kingdoms", after Liu Bei died in Bai Di City in 223 CE, the halberd was transported back to Chengdu and was buried there. His name was Hui Ling. According to the Chinese system, there must be a temple in the tomb, so at the same time, there will be the birth of Han Zhaolie Temple. During the period of the Southern and Northern Dynasties, Wuhou Temple in Chengdu merged with Huiling and Han Zhaoliem.</p>
-
-
-
-
-        <h2>2.Jianmenguan</h2>
-        <p><strong>Introduction:</strong>Jianmenguan Scenic Area is a national AAAAA-class scenic spot, a national-level scenic spot, a national key cultural relics protection unit, a national forest park, a national natural and cultural double heritage, and one of the 100 red classic tourist attractions in China.</p>
-        <p>The Jianmenguan Scenic Area consists of Jianmenguan and Cuiyun Gallery, two adjacent scenic spots. The total planning area is 84 square kilometers, the core area is 6 square kilometers, and there are more than 300 viewing spots (districts), which is an important part of the Sichuan Jiuzhaii Ring Road. The supporting center of the node and the cultural tourism route of the Three Kingdoms.</p>
-        <p><strong>Related cultural story:</strong>The "Yizhou Tujing" cloud: Xiaojianshan intercepts the wild sky, Benfeng fell to the ground, Han Chu Han Han, Ye Yong Qin Yong. Although the Great Sword is naturally in danger, there is a stumbling block that can be held between Chongzhen and Chongzhen. The small sword is chiseled with stone beams, flying into the road, towering can not be overtaken, Li Bai, the cloud is the first time when the off Wan Fu Mo also open. Although Liu Zen and Xiao Ji Zhi, what are their advantages?</p>
-        <p>During the Three Kingdoms period, the prime minister Zhuge Liang led the army to cut Wei, passing through the Dajian Mountain, seeing the majestic peaks, and the steep mountains, the sergeants chiseled the rocks, set up the flying beams, and took the plank road. Zhuge Liang Liu Shaoshan, the Northern Expedition Cao Wei, had been in the grain, garrison, training; also in the Dajianshan between the cliffs of the canyon stone masonry for the door, build closed, send soldiers to guard. In 263 AD, Wei Junzhen’s general West will lead 100,000 elite soldiers to advance into Hanzhong, almost encroaching on Jianmenguan to capture the country of Shu. Jiang Jun’s general Jiang Wei’s 30,000 troops will retreat and shut the sword and shut off the Zhong Wan’s 100,000 troops in Yujian. Outside the door.</p>
-
-        <h2>3.the temple of Qiqiu Mountain.</h2>
-        <p><strong>Introduction:</strong>Out of 49 kilometers north of Mianyang City, it is named after “East is tied up with Yulin, and west is nestled with water”. As early as the 22nd year of Qin Zhaowang (AD 285), it was located in the city of Yucheng County. However, what really made the place famous for playing loudly abroad was a temple 9 kilometers north of the city: the temple of Qiqiu Mountain.</p>
-        <p><strong>Related cultural story:</strong>This temple, which was built in the Jin Dynasty, has been preserved in a better structure in the northern part of Sichuan since it was built and expanded over the Tang, Song, Yuan, Ming and Qing dynasties. It is the birthplace of the Wenchang culture in China and its Value has the "sole" concept.</p>
-        <p>The famous Cui Yun Gallery Cooper. When the three kingdoms were said, Zhang Fei led troops to this, because the hot weather was difficult, and the soldiers were planted to shade trees. It is said that a miracle appeared, actually "planting trees in the morning, shading in the afternoon." The local people called it "Zhang Feibai." In the Ming Dynasty, the state of Jianzhou mobilized the people to plant hundreds of thousands of cypress trees on the ancient road, and then artificially created this green cloud corridor. The ancient cypress on the green corridor was a living historical relic, a rare natural wonder.</p>
-
-
-
-        <h3>traffic：</h3>
-        <table class="table">
-            <tbody>
-            <tr>
-                <td>Chengdu East (Wuhou Temple) to Guangyuan (Jianmen Pass) Train</td>
-            </tr>
-            <tr>
-                <td>Guangyuan to Mianyang (Seven Songs Temple) Train</td>
-            </tr>
-            <tr>
-                <td>Mianyang to Chengdu East Train</td>
-            </tr>
-            </tbody>
-        </table>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Specialty or advantage</label>
+                <textarea class="form-control  col-md-offset-2" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Tourist destination expectation</label>
+                <textarea class="form-control  col-md-offset-2" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Other notes</label>
+                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default col-md-offset-2">Submit</button>
+                <button type="reset" class="btn btn-default">Cancel</button>
+            </div>
+        </form>
     </div>
 </div>
 
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/dialog.js"></script>
-<script src="js/Ehome.js"></script>
-<script src="js/search.js"></script>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/dialog.js"></script>
+<script src="../js/Ehome.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/baomingbiao.js"></script>
 </body>
 </html>

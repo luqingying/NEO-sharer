@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NEO-sharer—Work travel</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/baomingbiao.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/search-modal.css">
-    <link rel="stylesheet" href="css/english.css">
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/mode.css">
+    <title>Delicious food</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/search-modal.css">
+    <link rel="stylesheet" href="../css/english.css">
     <style type="text/css">
         #search-head{
             width: 700px;
@@ -17,6 +18,8 @@
 </head>
 <body>
 
+<!-- 一键定制弹窗 -->
+<div class="blueDialog"></div>
 
 <header>
     <div class="container-fluid header">
@@ -84,29 +87,30 @@
                         <li class=""><a href="Ehome.html">Home page</a></li>
 
                         <li class=" dropdown">
-                            <a href="#hongjunluxian">
+                            <a href="E-luxian1.html">
                                 The Red Army line
                             </a>
                         </li>
 
                         <li class=" dropdown">
-                            <a href="#sanguowenhua">
+                            <a href="E-luxian2.html">
                                 The culture of the Three Kingdoms
                             </a>
                         </li>
 
                         <li class=" dropdown">
-                            <a href="#shicizhixiang">
+                            <a href="E-luxian3.html">
                                 The hometown of poetry
                             </a>
                         </li>
+
                         <li class=" ">
                             <a href="Ezutuanyouxue.html" class="dropdown-toggle">
                                 Group tour
                             </a>
                         </li>
                         <li class="">
-                            <a href="Edagonglvxing.htmls" class="dropdown-toggle">
+                            <a href="Edagonglvxing.html" class="dropdown-toggle">
                                 Work travel
                             </a>
                         </li>
@@ -263,133 +267,67 @@
     </div>
 </div>
 
-<div class="container-fluid blue_bg">
-    <div class="blue_title text-center">
-        <span class="title">Work Travel Form</span>
+<main>
+    <div class="page-header">
+        <h1>Delicious food
+        </h1>
     </div>
-    <div class="container">
-        <form class="form-horizontal" role="form">
-            <div class="form-group">
-                <label for="name-input" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" id="name-input" placeholder="Please enter your name">
-                </div>
-                <!--                </div>
-                                <div class="form-group">-->
-                <label for="sex" class="col-sm-2 control-label">Gender</label>
-                <div class="col-sm-3">
-                    <select class="form-control" id="sex">
-                        <option>Man</option>
-                        <option>Woman</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="country" class="col-sm-2 control-label">Nationality</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" id="country" placeholder="Please enter your nationality">
-                </div>
-                <!--                </div>
-                                <div class="form-group">-->
-                <label for="language-input" class="col-sm-2 control-label">Language</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" id="language-input"
-                           placeholder="Please enter your language">
-                </div>
-            </div>
 
-            <div class="form-group">
-                <label for="telphone-num" class="col-sm-2 control-label">Telephone</label>
-                <div class="col-sm-3">
-                    <input type="tel" class="form-control" id="telphone-num" placeholder="Please enter your telephone">
-                </div>
-                <!--              </div>
-                              <div class="form-group">-->
-                <label for="e_mail" class="col-sm-2 control-label">Mailbox</label>
-                <div class="col-sm-3">
-                    <input type="email" class="form-control" id="e_mail" placeholder="please enter your email">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Address</label>
-                <div class="col-sm-2">
-                    <input type="tel" class="form-control" placeholder="Province">
-                </div>
-                <div class="col-sm-2">
-                    <input type="tel" class="form-control" placeholder="City">
-                </div>
-                <div class="col-sm-2">
-                    <input type="tel" class="form-control" placeholder="County">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="sex" class="col-sm-2 control-label">Tourist choice</label>
-                <div class="col-sm-3" id="travel-place">
-                    <select class="col-sm-3 form-control sangeluxian">
-                        <option class="hongjun">Red Army Route</option>
-                        <option class="sanguo">Three cultures</option>
-                        <option class="shici">Land of poetry</option>
-                    </select>
-                </div>
-                <div class="col-sm-3">
-                    <select class=" form-control" id="红军路线">
-                        <option>Sewudang Mountain</option>
-                        <option>Sichuan and Shaanxi Revolutionary Base</option>
-                        <option>Jianmenguan Rebellion Site</option>
-                        <option>Zhu De's House</option>
-                        <option>Former Residence of Deng Xiaoping</option>
-                    </select>
+    <div class="places" id="chuancai">
+        <div class="pictures-div">
+            <img src="../img/chuancai.jpg">
+        </div>
+        <h2>Sichuan cuisine</h2>
+        <p>It has always enjoyed the reputation of "one dish, one grain, 100 dishes and 100 flavors". Sichuan cuisine has many 38 kinds of cooking methods including frying, frying, drying, frying, fumigating, soaking, stewing, braising, braising, sticking, blasting and so on. In terms of taste, it is very particular about color, aroma, taste, shape, and the length of the north and the south.</p>
+        <p>There are always "seven flavors" (sweet, acid, hemp, spicy, bitter, fragrant, salty), "eight" (dry burning, acid, spicy, fish fragrance, stir - stir, strange taste, pepper, red oil).</p>
+        <p>The main dishes are "kung pao chicken", "Mapo bean curd", "light shadow beef", "camphor tea duck", "pot tripe hot pot", "fish scallop meat", and so on more than 300 kinds.</p>
+    </div><!--川菜-->
 
-                    <select class="form-control" id="三国文化">
-                        <option>Wu Houyi</option>
-                        <option>Jianmenguan</option>
-                        <option>Seven Temples</option>
-                    </select>
+    <div class="places" id="shancai">
+        <div class="pictures-div">
+            <img src="../img/shancai.jpg">
+        </div>
+        <h2>Shanxi cuisine（Qin cuisine）</h2>
+        <p>Shanxi cuisine is called Shaanxi cuisine, also known as Qin cuisine. It is one of the regional cuisines in China.</p>
+        <p>Qin cuisine is simple and unadorned in its seasoning, emphasizing the intrinsic flavor and aroma, followed by color and form. One of the characteristics is that the main flavor is outstanding and the taste is pure. Although a variety of condiments used in a dish, the main flavor of each dish is only one, acid, spicy, bitter, sweet and salty only with one taste, and other flavors (including all kinds of compound flavours). Another characteristic of Qin cuisine is the outstanding fragrance. Compared with the four major cuisines, chilli, chilli, garlic and pepper are used in addition to the main ingredients of the Chinese cabbage. The purpose of the selection is not only for spicy, acid and hemp, but also for its fragrance.</p>
+        <p>Famous dishes: "Yulin tofu banquet", "gourd chicken", "burning three delicacies", "Ziyang steamed basin" and so on.</p>
+    </div><!--大唐芙蓉园-->
 
-                    <select class=" form-control" id="诗词之乡">
-                        <option>Du Fu Thatched Cottage</option>
-                        <option>Sansu</option>
-                        <option>Taibai Bailinlin</option>
-                    </select>
-                </div>
+    <div class="places">
+        <div class="pictures-div" id="yuecai">
+            <img src="../img/yuecai.jpg">
+        </div>
+        <h2>Cantonese cuisine</h2>
+        <p>Cantonese cuisine, Guangdong cuisine, is one of the four traditional Chinese cuisines and eight major cuisines. It originated in south of the Five Ridges.</p>
+        <p>Cantonese cuisine is made up of Guangzhou cuisine (also known as Cantonese cuisine), Chaozhou cuisine (also known as Chaoshan cuisine) and Dongjiang cuisine (also known as Hakka cuisine). Guangzhou cuisine is rich in material and fine material; it is clear and not light, fresh and uncommon, tender and not raw, oil but not greasy; good at stir fry, which requires mastery of fire and oil temperature. Chaozhou cuisine is one of the two schools in Fujian and Guangdong. It is famous for its seafood, soup, vegetarian and sugar beet. Dongjiang dishes are mostly meat, very few aquatic products. The main ingredients are outstanding. They are thick and fragrant, heavy oil and salty taste. They are famous for casseroles and have a unique local flavor.</p>
+        <p>Famous Cantonese dishes: "abalone," "Guangzhou Wenchang chicken", "bake suckling pig", "New Dragon Emperor banquet", "Peninsular imperial swallow", "steamed East Star spot", "hang oven to burn goose" and so on</p>
+
+    </div><!--陕西历史博物馆-->
+
+    <div class="places">
+        <div class="pictures-div" id="lucai">
+            <img src="../img/lucai.jpg">
+        </div>
+        <h2>Shandong cuisine</h2>
+
+        <p>Shandong cuisine is the oldest local cuisine with the richest techniques, the most difficult and the most effective local flavor dishes. Gu Qilu is the hometown of Kong and Meng. It has been one of the birthplaces of Chinese culture since ancient times. Shandong cuisine is famous for its clear, fresh, crisp and tender dishes from Ji'nan and Jiaodong.</p>
+        <p>Shandong cuisine pays attention to the fine texture of raw materials, fresh salt, fresh soup, and fresh seasoning. The green onion is a special product in Shandong. Most of the dishes are to be flavored with onion and garlic. The methods of stir frying, burning, bursting, grilled and burning are all used with green onions, especially green onions.</p>
+        <p>Classic dishes include: "one quality bean curd", "scallion burning sea cucumber", "three filaments shark fin", "white pick four treasures", "nine turn large intestine", "oil explosion crisp" and so on.</p>
 
 
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Ideal place to work and type</label>
-                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Specialty or advantage</label>
-                <textarea class="form-control  col-md-offset-2" rows="5"></textarea>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Requirements for fellow volunteers</label>
-                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label">Other requirements or notes</label>
-                <textarea class="form-control col-md-offset-2" rows="5"></textarea>
-            </div>
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-default col-md-offset-2">Submit</button>
-                <button type="reset" class="btn btn-default">Cancel</button>
-            </div>
-        </form>
-    </div>
-</div>
+    </div><!--秦岭-->
 
 
-<script src="js/jquery-3.2.1.min.js"></script>
+</main>
+
+
+<script src="../js/jquery-3.2.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/dialog.js"></script>
-
-<script src="js/baomingbiao.js"></script>
-<script src="js/search.js"></script>
-
-</body><script src="js/Ehome.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/dialog.js"></script>
+<script src="../js/Ehome.js"></script>
+<script src="../js/search.js"></script>
+</body>
 </html>
